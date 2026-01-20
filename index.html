@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yanuar Robiyanto | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">Yanuar.</div>
+    <nav class="menu" id="menu">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="about">
+    <img src="assets/images/profile/yanuar.jpg" alt="Profile">
+    <p>Saya mahasiswa Information Systems dengan fokus Business Intelligence. Berpengalaman dalam analisis data, pengembangan aplikasi web, UI/UX, serta dokumentasi teknis.</p>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="experience-list" id="experienceList"></div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project-filters">
+    <button onclick="filterProjects('all')">All</button>
+    <button onclick="filterProjects('bi')">Business Intelligence</button>
+    <button onclick="filterProjects('uiux')">UI/UX</button>
+    <button onclick="filterProjects('web')">Web App</button>
+  </div>
+  <div class="project-grid" id="projectGrid"></div>
+</section>
+
+<section id="certificates">
+  <h2>Certificates</h2>
+  <div class="cert-grid" id="certGrid"></div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-links">
+
+    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-card">
+      <img src="assets/images/contact/linkedin.svg" alt="LinkedIn">
+      <span>LinkedIn</span>
+    </a>
+
+    <a href="mailto:yanuar@email.com" class="contact-card">
+      <img src="assets/images/contact/gmail.svg" alt="Gmail">
+      <span>Email</span>
+    </a>
+
+    <a href="https://outlook.live.com" target="_blank" class="contact-card">
+      <img src="assets/images/contact/outlook.svg" alt="Outlook">
+      <span>Outlook</span>
+    </a>
+
+   
+  </div>
+</section>
+
+
+
+<footer>
+  <p>© 2026 Yanuar Robiyanto</p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

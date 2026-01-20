@@ -1,0 +1,6 @@
+@media(max-width:768px){
+  .menu{display:none;flex-direction:column;background:#fff;position:absolute;top:60px;right:20px;padding:15px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);}
+  .menu.show{display:flex;}
+  .hamburger{display:block;}
+  .about{grid-template-columns:1fr;}
+}
