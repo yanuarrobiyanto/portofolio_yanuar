@@ -787,10 +787,11 @@ body.dark .skill-card:hover {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;        /* pas: hampir full, tapi tidak nutup footer */
   pointer-events: none;
   z-index: 9999;
 }
+
 
 /* Disable on mobile */
 @media (max-width: 768px) {
