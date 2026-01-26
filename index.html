@@ -1,87 +1,295 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+  <!-- =====================================================
+       META & BASIC SETUP
+  ====================================================== -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yanuar Robiyanto | Portfolio</title>
+  <meta name = "theme-color" content = "#1bb566"/>
+
+
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Styles -->
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
+<canvas id="cursorCanvas"></canvas>
 
-<header>
-  <div class="nav">
-    <div class="logo">Yanuar Cahya Robiyanto</div>
-    <nav class="menu" id="menu">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#certificates">Certificates</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <!-- =====================================================
+       HEADER & NAVIGATION
+  ====================================================== -->
+  <header>
+    <div class="nav">
+
+      <!-- Logo -->
+      <div class="logo">
+      <img src="assets/icons/yr.png " alt="Profile Photo">
+</div>
+      <!-- Main Navigation -->
+      <nav class="menu" id="menu">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Hamburger (Mobile) -->
+      <div class="nav-actions">
+  <button id="themeToggle" class="theme-btn">🌙</button>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+</div>
+
+
+    </div>
+  </header>
+
+<!-- =====================================================
+     HERO OPENING SECTION
+====================================================== -->
+<section id="home" class="hero">
+
+  <div class="hero-container">
+
+    <!-- FOTO KIRI -->
+    <div class="hero-image">
+      <img src="assets/images/profile/fotoo.jpeg" alt="Profile Photo">
+      <span class="badge">Business Intelligence</span>
+    </div>
+
+    <!-- TEKS KANAN -->
+    <div class="hero-text">
+      <p class="small-text">Hello there, I'm</p>
+      <h1>Yanuar<br>Robiyanto</h1>
+
+      <p class="subtitle">
+        Information Systems student focused on Business Intelligence,
+        data analysis, and system-oriented solutions.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="assets/files/resume.pdf" download class="btn primary">
+          Download My Resume
+        </a>
+
+        <a href="https://wa.me/6282265052003" target="_blank" class="btn secondary">
+          Contact Me
+        </a>
+      </div>
+    </div>
+
   </div>
-</header>
 
-<section id="about">
-  <h2>About Me</h2>
-  <div class="about">
-    <img src="assets/images/profile/Foto .png" alt="Profile">
-    <p>Saya mahasiswa Information Systems dengan fokus Business Intelligence. Berpengalaman dalam analisis data, pengembangan aplikasi web, UI/UX, serta dokumentasi teknis.</p>
+</section>
+
+  <!-- =====================================================
+       ABOUT SECTION
+  ====================================================== -->
+  <section id="about">
+    <h2>About Me</h2>
+
+    <div class="about">
+      <img src="assets/images/profile/foto.png" alt="Profile Photo">
+
+      <p class="description">
+        Information Systems student at Bina Nusantara University with a concentration in Business Intelligence.
+        Experienced in analyzing business and system requirements, managing data pipelines, and transforming data
+        into structured insights through dashboards and reports. Proficient in data analysis, ETL processes, data
+        visualization, and understanding data quality and system validation to ensure accuracy and reliability.
+        Passionate about contributing to data-driven and system-oriented solutions that bridge business needs with
+        well-structured, efficient, and reliable digital systems.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       SKILLS SECTION
+  ====================================================== -->
+  <section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills-grid">
+
+      <!-- Skill Card -->
+      <div class="skill-card">
+        <img src="assets/images/skills/ssms.png" alt="SQL Server Management Studio">
+        <span class="skill-name">SQL Server <br> Management Studio</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/vp.png" alt="Visual Paradigm">
+        <span class="skill-name">Visual Paradigm</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/vs22.png" alt="Visual Studio 2022">
+        <span class="skill-name">Visual Studio <br> 2022</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/tableau.png" alt="Tableau">
+        <span class="skill-name">Tableau</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/excel.png" alt="Excel">
+        <span class="skill-name">Excel</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/word.png" alt="Microsoft Word">
+        <span class="skill-name">Word</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/figma.png" alt="Figma">
+        <span class="skill-name">Figma</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/miro.png" alt="Miro">
+        <span class="skill-name">Miro</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/drawio.png" alt="Draw.io">
+        <span class="skill-name">Draw.io</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/DBeaver.png" alt="DBeaver">
+        <span class="skill-name">DBeaver</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/toad.png" alt="TOAD">
+        <span class="skill-name">TOAD</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/mysql.png" alt="MySQL">
+        <span class="skill-name">MySQL</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/vscode.png" alt="Visual Studio Code">
+        <span class="skill-name">Visual Studio Code</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/eclipse.png" alt="Eclipse">
+        <span class="skill-name">Eclipse</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/xampp.png" alt="XAMPP">
+        <span class="skill-name">XAMPP</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/java.png" alt="Java">
+        <span class="skill-name">Java</span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       EXPERIENCE SECTION
+  ====================================================== -->
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <!-- Filled dynamically by JS -->
+    <div class="experience-list" id="experienceList"></div>
+  </section>
+
+
+  <!-- =====================================================
+       PROJECTS SECTION
+  ====================================================== -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <!-- Filters -->
+    <div class="project-filters">
+      <button onclick="filterProjects('all')">All</button>
+      <button onclick="filterProjects('bi')">Business Intelligence</button>
+      <button onclick="filterProjects('uiux')">UI/UX</button>
+      <button onclick="filterProjects('web')">Web App</button>
+    </div>
+
+    <!-- Grid (Filled by JS) -->
+    <div class="project-grid" id="projectGrid"></div>
+  </section>
+
+
+  <!-- =====================================================
+       CERTIFICATES SECTION
+  ====================================================== -->
+<div class="cert-modal" id="certModal" onclick="closeCertModal()">
+  <div class="cert-modal-content" onclick="event.stopPropagation()">
+    <img id="certModalImage" src="" alt="Certificate Preview">
   </div>
-</section>
+</div>
 
-<section id="experience">
-  <h2>Experience</h2>
-  <div class="experience-list" id="experienceList"></div>
-</section>
+  <section id="certificates">
+    <h2>Certificates</h2>
 
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="project-filters">
-    <button onclick="filterProjects('all')">All</button>
-    <button onclick="filterProjects('bi')">Business Intelligence</button>
-    <button onclick="filterProjects('uiux')">UI/UX</button>
-    <button onclick="filterProjects('web')">Web App</button>
-  </div>
-  <div class="project-grid" id="projectGrid"></div>
-</section>
-
-<section id="certificates">
-  <h2>Certificates</h2>
-  <div class="cert-grid" id="certGrid"></div>
-</section>
-
-<section id="contact">
-  <h2>Contact Me</h2>
-  <div class="contact-links">
-
-    <a href="https://linkedin.com/in/yanuar-cahya-robiyanto" target="_blank" class="contact-card">
-      <img src="assets/images/contact/linkedin.svg" alt="LinkedIn">
-      <span>LinkedIn</span>
-    </a>
-
-    <a href="mailto:yanuar.robiyanto22@email.com" class="contact-card">
-      <img src="assets/images/contact/gmail.svg" alt="Gmail">
-      <span>Email</span>
-    </a>
-
-    <a href="mailto:yanuar.robiyanto@binus.ac.id" class="contact-card">
-      <img src="assets/images/contact/outlook.svg" alt="Outlook">
-      <span>Outlook</span>
-    </a>
-
-   
-  </div>
-</section>
+    <!-- Grid (Filled by JS) -->
+    <div class="cert-grid" id="certGrid"></div>
+  </section>
 
 
+  <!-- =====================================================
+       CONTACT SECTION
+  ====================================================== -->
+  <section id="contact">
+    <h2>Contact Me</h2>
 
-<footer>
-  <p>© 2026 Yanuar Robiyanto</p>
-</footer>
+    <div class="contact-links">
 
-<script src="assets/js/main.js"></script>
+      <a href="https://linkedin.com/in/yanuar-cahya-robiyanto" target="_blank" 
+   class="contact-card" data-tooltip="LinkedIn">
+  <img src="assets/images/contact/linkedin.svg" alt="LinkedIn">
+</a>
+
+
+      <a href="mailto:yanuar.robiyanto22@email.com" 
+   class="contact-card" data-tooltip="Gmail">
+  <img src="assets/images/contact/gmail.svg" alt="Gmail">
+</a>
+
+<a href="mailto:yanuar.robiyanto@binus.ac.id" 
+   class="contact-card" data-tooltip="Outlook">
+  <img src="assets/images/contact/outlook.svg" alt="Outlook">
+</a>
+
+
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+  <footer>
+    <p>© 2026 Yanuar Robiyanto</p>
+  </footer>
+
+
+  <!-- =====================================================
+       MAIN SCRIPT
+  ====================================================== -->
+  <script src="assets/js/main.js"></script>
+
 </body>
 </html>

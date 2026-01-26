@@ -1,6 +1,139 @@
-@media(max-width:768px){
-  .menu{display:none;flex-direction:column;background:#fff;position:absolute;top:60px;right:20px;padding:15px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);}
-  .menu.show{display:flex;}
-  .hamburger{display:block;}
-  .about{grid-template-columns:1fr;}
+/* =====================================================
+   1. MOBILE KECIL (<= 480px)
+===================================================== */
+
+@media (max-width: 480px) {
+
+  /* Header */
+  .nav {
+    padding: 12px 16px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  /* Section spacing */
+  section {
+    padding: 80px 16px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  /* Skills */
+ .skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    justify-items: center;
+  }
+
+  .skill-card {
+    width: 68px;
+    height: 68px;
+  }
+
+  .skill-card img {
+    max-width: 28px;
+    max-height: 28px;
+  }
+
+  .skill-name {
+    font-size: 9px;
+  }
+
+}
+
+
+
+/* =====================================================
+   2. TABLET & MOBILE BESAR (<= 768px)
+===================================================== */
+@media (max-width: 768px) {
+
+  /* Navigation */
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* About */
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  /* Skills */
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    justify-items: center;
+  }
+
+  .skill-card {
+    width: 75px;
+    height: 75px;
+  }
+
+  /* =====================================================
+     HERO RESPONSIVE (DITAMBAHKAN DI SINI)
+  ===================================================== */
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  /* Matikan cursor glow di tablet & mobile */
+  .cursor-glow {
+    display: none;
+  }
+
+}
+
+
+
+/* =====================================================
+   3. LAPTOP BESAR / DESKTOP WIDE (>= 1200px)
+===================================================== */
+
+@media (min-width: 1200px) {
+
+  section {
+    max-width: 1280px;
+  }
+
+  .nav {
+    max-width: 1280px;
+  }
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 30px;
+}
+
 }
