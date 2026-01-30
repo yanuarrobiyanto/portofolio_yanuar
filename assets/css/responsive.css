@@ -127,9 +127,9 @@
     max-width: 1280px;
   }
 
-  .nav {
+  /* .nav {
     max-width: 1280px;
-  }
+  } */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));

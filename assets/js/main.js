@@ -7,7 +7,7 @@ const experiences = [
   {
     logo: "assets/images/experience/muf.png",
     role: "Technical Writer - Mandiri Utama Finance",
-    duration: "Feb 2025 - Sekarang",
+    duration: "Feb 2025 - Present",
     desc: `
         <strong>System Requirement Analysis</strong><br>
     Analyzed system requirements, modeled business processes using activity diagrams and process flows, and prepared Technical Specification Documents (TSD).<br><br>
@@ -47,6 +47,29 @@ const experiences = [
       Leveraged knowledge and experience to train and mentor new interns, helping them adapt and achieve optimal performance.
     `
   }
+  ,
+  {
+    logo: "assets/images/experience/fyp.png",
+    role: "Freshman Leader - BINUS University",
+    duration: "Jul 2023 - Aug 2023",
+    desc: `
+      Mentoring freshmen during Academic Orientation (AO) and General Orientation (GO) by providing guidance and support to new students as they transition into campus life.<br><br>
+      Collaborating with other Freshmen Leaders to organize orientation activities, workshops, and classes, working together to create engaging and informative experiences for incoming students.<br><br>
+      Responsible for teaching classes on Graduate Attributes Exploration and Campus Life Journey, aimed at helping students explore essential skills and experiences for their future careers.
+    `
+  }
+   ,
+  {
+    logo: "assets/images/experience/kemenhan.png",
+    role: "Kader Muda Bela Negara - Kementrian Pertahanan RI",
+    duration: "Aug 2019 - Aug 2019",
+    desc: `
+      Mentoring freshmen during Academic Orientation (AO) and General Orientation (GO) by providing guidance and support to new students as they transition into campus life.<br><br>
+      Collaborating with other Freshmen Leaders to organize orientation activities, workshops, and classes, working together to create engaging and informative experiences for incoming students.<br><br>
+      Responsible for teaching classes on Graduate Attributes Exploration and Campus Life Journey, aimed at helping students explore essential skills and experiences for their future careers.
+    `
+  }
+  
 ];
 
 
