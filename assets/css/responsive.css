@@ -91,6 +91,17 @@
     height: 75px;
   }
 
+
+
+  .exp-grid-2 {
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.exp-role {
+  font-size: 18px;
+}
+
   /* =====================================================
      HERO RESPONSIVE (DITAMBAHKAN DI SINI)
   ===================================================== */

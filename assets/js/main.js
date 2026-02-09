@@ -5,70 +5,222 @@
 /* Experiences */
 const experiences = [
   {
-    logo: "assets/images/experience/muf.png",
-    role: "Technical Writer - Mandiri Utama Finance",
-    duration: "Feb 2025 - Present",
-    desc: `
-        <strong>System Requirement Analysis</strong><br>
-    Analyzed system requirements, modeled business processes using activity diagrams and process flows, and prepared Technical Specification Documents (TSD).<br><br>
+  logo: "assets/images/experience/muf.png",
+  role: "Technical Writer",
+  company: "PT Mandiri Utama Finance",
+  location: "Jakarta, Indonesia",
+  flag: "🇮🇩",
+  date: "Feb 2025 - Feb 2026",
+  length: "1 Year",
+  type: "Internship",
+  mode: "Onsite",
+  desc: `
+ <div class="exp-block">
+  <div class="exp-block-title">
+    <span class="exp-ico">≡</span>
+    <span class="exp-block-text">RESPONSIBILITIES</span>
+  </div>
+  <ul class="exp-list">
+    <li>Analyzed system requirements and modeled business processes using activity diagrams and process flows.</li>
+    <li>Prepared and maintained Technical Specification Documents (TSD) to support development teams.</li>
+    <li>Documented business and technical requirements based on BRD analysis and application testing.</li>
+    <li>Translated complex business and technical needs into clear system specifications for developers.</li>
+    <li>Collaborated with developers, database engineers, testers, and system analysts throughout the SDLC.</li>
+    <li>Ensured documentation complied with company SDLC standards and was continuously updated during enhancements.</li>
+  </ul>
+</div>
 
-    <strong>Business & Technical Documentation</strong><br>
-    Documented business and technical requirements based on BRD analysis and application testing.<br><br>
+<div class="exp-divider"></div>
 
-    <strong>System Specification Development</strong><br>
-    Translated complex business and technical needs into clear system specifications for development teams.<br><br>
+<div class="exp-grid-2">
+  <div class="exp-block">
+    <div class="exp-block-title">
+      <span class="exp-ico">💡</span>
+      <span class="exp-block-text">WHAT I LEARNED</span>
+    </div>
+    <ul class="exp-list">
+      <li>Improved skills in translating business requirements into structured technical documentation.</li>
+      <li>Gained deeper understanding of system development lifecycle (SDLC) documentation standards.</li>
+      <li>Learned how to align requirements, testing results, and documentation into one consistent system specification.</li>
+    </ul>
+  </div>
 
-    <strong>Cross-Functional Collaboration</strong><br>
-    Collaborated with developers, database engineers, testers, and system analysts during the system development process.<br><br>
+  <div class="exp-block">
+    <div class="exp-block-title">
+      <span class="exp-ico">🚀</span>
+      <span class="exp-block-text">IMPACT</span>
+    </div>
+    <ul class="exp-list">
+      <li>Supported smoother development execution by delivering clear and well-structured system specifications.</li>
+      <li>Improved cross-team alignment by ensuring documentation stayed updated during system enhancements.</li>
+      <li>Reduced ambiguity for developers and testers through detailed requirement documentation and TSD preparation.</li>
+    </ul>
+  </div>
+</div>
+  `
+}
+,
+  {logo: "assets/images/experience/binus.png",
+  role: "Promotions Team",
+  company: "BINUS University",
+  location: "Jakarta, Indonesia",
+  flag: "🇮🇩",
+  date: "Feb 2024 - Present",
+  length: "2 Year",
+  type: "Part-time",
+  mode: "Onsite",
+  desc: `
+ <div class="exp-block">
+  <div class="exp-block-title">
+    <span class="exp-ico">≡</span>
+    <span class="exp-block-text">RESPONSIBILITIES</span>
+  </div>
+  <ul class="exp-list">
+  <li>Sold 60 graduate program registration forms within four months, consistently exceeding monthly targets.</li>
+  <li>Provided clear and detailed registration information for Master’s and Doctoral programs at BINUS Graduate Program.</li>
+  <li>Supported prospective students by explaining program benefits, requirements, and step-by-step registration procedures.</li>
+  <li>Supported the execution of multiple BINUS events to ensure smooth operations and successful outcomes.</li>
+  <li>Assisted supervisors in interviewing potential team members to evaluate fit and strengthen the team.</li>
+  <li>Trained and mentored new team members to help them adapt quickly and achieve optimal performance.</li>
+    </ul>
+</div>
 
-    <strong>SDLC Compliance & Maintenance</strong><br>
-    Ensured all documentation complied with the company’s SDLC standards and was maintained continuously during system enhancements.<br><br>
-    `
-  }
-  ,
-  {
-    logo: "assets/images/experience/binus.png",
-    role: "Promotions Team - BINUS University",
-    duration: "Feb 2024 - Present",
-    desc: `
-      <strong>Sales Achievement</strong><br>
-      Successfully sold 60 registration forms within a four-month period, exceeding the monthly target by 2 forms.<br><br>
+<div class="exp-divider"></div>
 
-      <strong>Registration Information</strong><br>
-      Provided clear and detailed information to prospective students about the registration process for both the Master's and Doctoral programs offered at BINUS Graduate Program.<br><br>
+<div class="exp-grid-2">
+  <div class="exp-block">
+    <div class="exp-block-title">
+      <span class="exp-ico">💡</span>
+      <span class="exp-block-text">WHAT I LEARNED</span>
+    </div>
+    <ul class="exp-list">
+    <li>Strengthened communication and persuasion skills in a professional sales and education environment.</li>
+    <li>Learned how to explain complex program information clearly and confidently to prospective students.</li>
+    <li>Developed leadership skills through mentoring and supporting new team members.</li>
+    </ul>
+  </div>
 
-      <strong>Additional Responsibilities</strong><br>
-      Trusted with additional duties, including interviewing new members to ensure their suitability for strengthening the team.<br><br>
+  <div class="exp-block">
+    <div class="exp-block-title">
+      <span class="exp-ico">🚀</span>
+      <span class="exp-block-text">IMPACT</span>
+    </div>
+    <ul class="exp-list">
+     <li>Contributed to increased graduate program registrations by achieving 60 successful form submissions in 4 months.</li>
+      <li>Exceeded monthly targets by maintaining consistent sales performance above expectations.</li>
+      <li>Improved team readiness by supporting the selection, onboarding, and training of new team members.</li>
+      </ul>
+  </div>
+</div>
+  `
+  },
+    {logo: "assets/images/experience/fyp.png",
+  role: "Freshman Leader",
+  company: "BINUS University",
+  location: "Jakarta, Indonesia",
+  flag: "🇮🇩",
+  date: "Jul 2023 - Aug 2023",
+  length: "2 Month",
+  type: "Student Mentor",
+  mode: "Onsite",
+  desc: `
+  <div class="exp-block">
+  <div class="exp-block-title">
+    <span class="exp-ico">≡</span>
+    <span class="exp-block-text">RESPONSIBILITIES</span>
+  </div>
+  <ul class="exp-list">
+    <li>Mentored freshmen during Academic Orientation (AO) and General Orientation (GO) by providing guidance and support as they transitioned into campus life.</li>
+    <li>Supported incoming students by answering questions and helping them adapt to academic and campus environments.</li>
+    <li>Collaborated with other Freshmen Leaders to organize orientation activities, workshops, and classes.</li>
+    <li>Facilitated interactive sessions to ensure students stayed engaged and understood key campus information.</li>
+    <li>Delivered classes on Graduate Attributes Exploration and Campus Life Journey to support student development.</li>
+    <li>Assisted in coordinating orientation flow to ensure activities ran smoothly and on schedule.</li>
+  </ul>
+</div>
 
-      <strong>Event Management</strong><br>
-      Capable of managing and handling various events at BINUS, ensuring that all activities run smoothly and successfully.<br><br>
+<div class="exp-divider"></div>
 
-      <strong>Training and Mentoring</strong><br>
-      Leveraged knowledge and experience to train and mentor new interns, helping them adapt and achieve optimal performance.
-    `
-  }
-  ,
-  {
-    logo: "assets/images/experience/fyp.png",
-    role: "Freshman Leader - BINUS University",
-    duration: "Jul 2023 - Aug 2023",
-    desc: `
-      Mentoring freshmen during Academic Orientation (AO) and General Orientation (GO) by providing guidance and support to new students as they transition into campus life.<br><br>
-      Collaborating with other Freshmen Leaders to organize orientation activities, workshops, and classes, working together to create engaging and informative experiences for incoming students.<br><br>
-      Responsible for teaching classes on Graduate Attributes Exploration and Campus Life Journey, aimed at helping students explore essential skills and experiences for their future careers.
-    `
-  }
-   ,
-  {
-    logo: "assets/images/experience/kemenhan.png",
-    role: "Kader Muda Bela Negara - Kementrian Pertahanan RI",
-    duration: "Aug 2019 - Aug 2019",
-    desc: `
-      Mentoring freshmen during Academic Orientation (AO) and General Orientation (GO) by providing guidance and support to new students as they transition into campus life.<br><br>
-      Collaborating with other Freshmen Leaders to organize orientation activities, workshops, and classes, working together to create engaging and informative experiences for incoming students.<br><br>
-      Responsible for teaching classes on Graduate Attributes Exploration and Campus Life Journey, aimed at helping students explore essential skills and experiences for their future careers.
-    `
-  }
+<div class="exp-grid-2">
+  <div class="exp-block">
+    <div class="exp-block-title">
+      <span class="exp-ico">💡</span>
+      <span class="exp-block-text">WHAT I LEARNED</span>
+    </div>
+    <ul class="exp-list">
+      <li>Strengthened communication and public speaking skills through mentoring and classroom facilitation.</li>
+      <li>Improved teamwork and coordination skills by working closely with other Freshmen Leaders.</li>
+      <li>Developed leadership skills by guiding new students and supporting their transition into university life.</li>
+    </ul>
+  </div>
+
+  <div class="exp-block">
+    <div class="exp-block-title">
+      <span class="exp-ico">🚀</span>
+      <span class="exp-block-text">IMPACT</span>
+    </div>
+    <ul class="exp-list">
+      <li>Enhanced student onboarding experience by providing structured guidance and support during orientation programs.</li>
+      <li>Improved session effectiveness by delivering clear explanations and ensuring students understood key campus processes.</li>
+      <li>Supported a smooth and engaging orientation program through strong coordination and teamwork.</li>
+    </ul>
+  </div>
+</div>
+  `
+  },
+    {logo: "assets/images/experience/kemenhan.png",
+  role: "Kader Muda Bela Negara",
+  company: "Kementrian Pertahanan RI",
+  location: "Bogor, Indonesia",
+  flag: "🇮🇩",
+  date: "Aug 2019 - Aug 2019",
+  length: "4 Days Month",
+  type: "National Defense Training Program",
+  mode: "Onsite",
+  desc: `
+  <div class="exp-block-title">
+    <span class="exp-ico">≡</span>
+    <span class="exp-block-text">RESPONSIBILITIES</span>
+  </div>
+  <ul class="exp-list">
+    <li>Completed structured training programs focused on discipline, integrity, and personal responsibility.</li>
+    <li>Participated in group-based activities and drills to strengthen teamwork and coordination.</li>
+    <li>Followed strict schedules and training guidelines to maintain consistency and performance.</li>
+    <li>Demonstrated mental resilience and adaptability in a highly structured environment.</li>
+    <li>Maintained punctuality and time management throughout intensive training sessions.</li>
+    <li>Supported team performance by contributing actively during collaborative exercises.</li>
+  </ul>
+</div>
+
+<div class="exp-divider"></div>
+
+<div class="exp-grid-2">
+  <div class="exp-block">
+    <div class="exp-block-title">
+      <span class="exp-ico">💡</span>
+      <span class="exp-block-text">WHAT I LEARNED</span>
+    </div>
+    <ul class="exp-list">
+      <li>Strengthened discipline, integrity, and accountability through structured training routines.</li>
+      <li>Improved leadership, communication, and teamwork skills through collaborative activities.</li>
+      <li>Developed mental resilience, consistency, and strong time management under pressure.</li>
+    </ul>
+  </div>
+
+  <div class="exp-block">
+    <div class="exp-block-title">
+      <span class="exp-ico">🚀</span>
+      <span class="exp-block-text">IMPACT</span>
+    </div>
+    <ul class="exp-list">
+      <li>Built a strong foundation of discipline and responsibility that supports professional performance.</li>
+      <li>Improved teamwork effectiveness by applying communication and coordination skills in group settings.</li>
+      <li>Enhanced personal resilience and consistency through continuous performance in structured training.</li>
+    </ul>
+  </div>
+</div>
+`
+}
   
 ];
 
@@ -163,27 +315,69 @@ const menu           = document.getElementById("menu");
 /* =====================================================
    3. RENDER FUNCTIONS
 ===================================================== */
-
-/* Render Experiences */
 function renderExperiences() {
   experienceList.innerHTML = "";
 
   experiences.forEach(exp => {
     const card = document.createElement("div");
-    card.className = "exp-card";
+    card.className = "exp-card-v2";
 
     card.innerHTML = `
-      <img src="${exp.logo}" alt="${exp.role}">
-      <div>
-        <h4>${exp.role}</h4>
-        <small>${exp.duration}</small>
-        <p>${exp.desc}</p>
+      <div class="exp-header">
+        <div class="exp-logo">
+          <img src="${exp.logo}" alt="${exp.role}">
+        </div>
+
+        <div class="exp-title-area">
+          <h3 class="exp-role">${exp.role}</h3>
+
+          <div class="exp-company-line">
+            <span class="exp-company">${exp.company || "Company Name"}</span>
+            <span class="dot">•</span>
+            <span class="exp-location">${exp.location || "Jakarta, Indonesia"}</span>
+            <span class="flag">${exp.flag || "🇮🇩"}</span>
+          </div>
+
+          <div class="exp-meta">
+            <span>${exp.date || exp.duration}</span>
+            <span class="dot">•</span>
+            <span>${exp.length || ""}</span>
+            <span class="dot">•</span>
+            <span>${exp.type || ""}</span>
+            <span class="dot">•</span>
+            <span>${exp.mode || ""}</span>
+          </div>
+        </div>
+      </div>
+
+      <button class="exp-toggle-btn" type="button" data-exp-toggle>
+        <span class="chev">›</span>
+        <span class="label">Show details</span>
+      </button>
+
+      <div class="exp-details" data-exp-details>
+        <div class="exp-details-inner">
+          ${exp.desc}
+        </div>
       </div>
     `;
+
+    // Toggle behavior
+    const btn = card.querySelector("[data-exp-toggle]");
+    const label = btn.querySelector(".label");
+
+    btn.addEventListener("click", () => {
+      const isOpen = card.classList.toggle("is-open");
+      label.textContent = isOpen ? "Hide details" : "Show details";
+    });
 
     experienceList.appendChild(card);
   });
 }
+
+
+
+
 
 
 /* Render Projects */
@@ -222,11 +416,17 @@ function renderCertificates() {
     card.className = "cert-card";
     card.onclick = () => openCertModal(cert.image);
 
-    card.innerHTML = `
-      <img src="${cert.image}" alt="${cert.name}">
-      <h4>${cert.name}</h4>
-      <p>${cert.desc}</p>
-    `;
+   card.innerHTML = `
+  <div class="cert-thumb">
+    <img src="${cert.image}" alt="${cert.name.replace(/<br>/g, '')}">
+    <div class="cert-overlay">
+      <span class="cert-view">View detail ➜ </span>
+    </div>
+  </div>
+
+  <h4>${cert.name}</h4>
+  <p>${cert.desc}</p>
+`;
 
     certGrid.appendChild(card);
   });
@@ -261,6 +461,21 @@ function toggleMenu() {
   menu.classList.toggle("show");
 }
 
+// Auto close mobile menu setelah klik link
+document.querySelectorAll(".menu a").forEach(link => {
+  link.addEventListener("click", () => {
+    menu.classList.remove("show");
+  });
+});
+// Tutup menu kalau klik di luar menu (mobile)
+document.addEventListener("click", (e) => {
+  const isClickInsideMenu = menu.contains(e.target);
+  const isHamburger = e.target.classList.contains("hamburger");
+
+  if (!isClickInsideMenu && !isHamburger) {
+    menu.classList.remove("show");
+  }
+});
 
 /* =====================================================
    5. INITIAL RENDER
