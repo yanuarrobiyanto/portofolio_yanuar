@@ -1,37 +1,29 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <!-- =====================================================
-       META & BASIC SETUP
-  ====================================================== -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name = "theme-color" content = "#1bb566"/>
+  <meta name="theme-color" content="#1bb566"/>
 
-
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Main Styles -->
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
+
 <body>
-<canvas id="cursorCanvas"></canvas>
+  <canvas id="cursorCanvas"></canvas>
 
-
-  <!-- =====================================================
-       HEADER & NAVIGATION
-  ====================================================== -->
+  <!-- HEADER -->
   <header>
     <div class="nav">
-          <div class="logo">
-        <a href="#home" class="logo-btn">
-      <img src="assets/icons/yr.png" alt="Logo">
-    </a>
-</div>
 
-      <!-- Main Navigation -->
+      <div class="logo">
+        <a href="#home" class="logo-btn">
+          <img src="assets/icons/yr.png" alt="Logo">
+        </a>
+      </div>
+
       <nav class="menu" id="menu">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
@@ -41,71 +33,56 @@
         <a href="#contact">Contact</a>
       </nav>
 
-      <!-- Hamburger (Mobile) -->
       <div class="nav-actions">
         <button id="themeToggle" class="theme-btn">🌙</button>
         <div class="hamburger" onclick="toggleMenu()">☰</div>
       </div>
 
-
     </div>
   </header>
 
-<!-- =====================================================
-     HERO OPENING SECTION
-====================================================== -->
-<section id="home" class="hero">
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-container">
 
-  <div class="hero-container">
-
-    <!-- FOTO KIRI -->
-    <div class="hero-image">
-      <img src="assets/images/profile/fotoo.jpeg" alt="Profile Photo">
-      <span class="badge">Business Intelligence</span>
-    </div>
-
-    <!-- TEKS KANAN -->
-    <div class="hero-text">
-      <p class="small-text">Hello there, I'm</p>
-      <h1>Yanuar Cahya <br>Robiyanto</h1>
-
-      <p class="subtitle">
-        Information Systems student focused on Business Intelligence,
-        data analysis, and system-oriented solutions.
-      </p>
-
-      <div class="hero-buttons">
-          <a href="assets/cv/CV ATS Yanuar Cahya Robiyanto.pdf" download class="button">
-      <span class="button__text">Download</span>
-      <span class="button__icon">
-        <svg class="svg" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
-          <path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path>
-          <path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path>
-          <path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path>
-        </svg>
-      </span>
-    </a>
-
-
-
-        <!-- <a href="https://wa.me/6282265052003" target="_blank" class="btn secondary">
-          Contact Me
-          
-        </a> -->
-        <a href="https://wa.me/6282265052003" target="_blank" class="btn-contact">
-  Contact Me
-</a>
-
+      <div class="hero-image">
+        <img src="assets/images/profile/fotoo.jpeg" alt="Profile Photo">
+        <span class="badge">Business Intelligence</span>
       </div>
+
+      <div class="hero-text">
+        <p class="small-text">Hello there, I'm</p>
+        <h1>Yanuar Cahya <br>Robiyanto</h1>
+
+        <p class="subtitle">
+          Information Systems student focused on Business Intelligence,
+          data analysis, and system-oriented solutions.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="assets/cv/CV ATS Yanuar Cahya Robiyanto.pdf" download class="button">
+            <span class="button__text">Download</span>
+            <span class="button__icon">
+              <svg class="svg" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path>
+                <path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path>
+                <path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path>
+              </svg>
+            </span>
+          </a>
+
+          <a href="https://wa.me/6282265052003" target="_blank" class="btn-contact">
+            Contact Me
+          </a>
+
+        </div>
+      </div>
+
     </div>
+  </section>
 
-  </div>
-
-</section>
-
-  <!-- =====================================================
-       ABOUT SECTION
-  ====================================================== -->
+  <!-- ABOUT -->
   <section id="about">
     <h2>About Me</h2>
 
@@ -122,22 +99,15 @@
         modeling</b>, validate system outputs, and produce <b>standardized, data-driven reports</b>. Additionally,
         handled <b>application testing</b> to ensure features and outputs met specifications, and documented
         <b>analysis and testing results</b> as references for <b>development and evaluation</b>.
-
-
       </p>
     </div>
   </section>
 
-
-  <!-- =====================================================
-       SKILLS SECTION
-  ====================================================== -->
+  <!-- SKILLS -->
   <section id="skills">
     <h2>Skills</h2>
 
     <div class="skills-grid">
-
-      <!-- Skill Card -->
       <div class="skill-card">
         <img src="assets/images/skills/ssms.png" alt="SQL Server Management Studio">
         <span class="skill-name">SQL Server <br> Management Studio</span>
@@ -217,29 +187,19 @@
         <img src="assets/images/skills/java.png" alt="Java">
         <span class="skill-name">Java</span>
       </div>
-
     </div>
   </section>
 
-
-  <!-- =====================================================
-       EXPERIENCE SECTION
-  ====================================================== -->
+  <!-- EXPERIENCE -->
   <section id="experience">
     <h2>Experience</h2>
-
-    <!-- Filled dynamically by JS -->
     <div class="experience-list" id="experienceList"></div>
   </section>
 
-
-  <!-- =====================================================
-       PROJECTS SECTION
-  ====================================================== -->
+  <!-- PROJECTS -->
   <section id="projects">
     <h2>Projects</h2>
 
-    <!-- Filters -->
     <div class="project-filters">
       <button onclick="filterProjects('all')">All</button>
       <button onclick="filterProjects('bi')">Business Intelligence</button>
@@ -247,103 +207,64 @@
       <button onclick="filterProjects('web')">Web App</button>
     </div>
 
-    <!-- Grid (Filled by JS) -->
     <div class="project-grid" id="projectGrid"></div>
   </section>
 
-
-  <!-- =====================================================
-       CERTIFICATES SECTION
-  ====================================================== -->
-<div class="cert-modal" id="certModal" onclick="closeCertModal()">
-  <div class="cert-modal-content" onclick="event.stopPropagation()">
-    <img id="certModalImage" src="" alt="Certificate Preview">
+  <!-- CERTIFICATE MODAL -->
+  <div class="cert-modal" id="certModal" onclick="closeCertModal()">
+    <div class="cert-modal-content" onclick="event.stopPropagation()">
+      <img id="certModalImage" src="" alt="Certificate Preview">
+    </div>
   </div>
-</div>
 
+  <!-- CERTIFICATES -->
   <section id="certificates">
     <h2>Certificates</h2>
-
-    <!-- Grid (Filled by JS) -->
     <div class="cert-grid" id="certGrid"></div>
   </section>
 
-
-  <!-- =====================================================
-       CONTACT SECTION
-  ====================================================== -->
-  <!-- <section id="contact">
+  <!-- CONTACT -->
+  <section id="contact">
     <h2>Contact Me</h2>
 
-    <div class="contact-links">
+    <div class="contact-btns">
 
-      <a href="https://linkedin.com/in/yanuar-cahya-robiyanto" target="_blank" 
-   class="contact-card" data-tooltip="LinkedIn">
-  <img src="assets/images/contact/link.png" alt="LinkedIn">
-</a>
-
-
-      <a href="mailto:yanuar.robiyanto22@email.com" 
-        class="contact-card" data-tooltip="Gmail">
-        <img src="assets/images/contact/gmail.png" alt="Gmail">
+      <a href="https://linkedin.com/in/yanuar-cahya-robiyanto" target="_blank" class="Btn linkedin">
+        <svg class="svgIcon" viewBox="0 0 448 512" height="1.5em" xmlns="http://www.w3.org/2000/svg">
+          <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+        </svg>
+        <span class="text">LinkedIn</span>
       </a>
 
-<a href="mailto:yanuar.robiyanto@binus.ac.id" 
-   class="contact-card" data-tooltip="Outlook">
-  <img src="assets/images/contact/out.png" alt="Outlook">
-</a>
+      <a href="mailto:yanuar.robiyanto22@email.com" class="Btn gmail">
+        <svg class="svgIcon" viewBox="0 0 512 512" height="1.5em" xmlns="http://www.w3.org/2000/svg">
+          <path d="M502.3 190.8L327.4 338.7c-15.9 13.1-39 13.1-54.9 0L9.7 190.8C3.9 186.1 0 178.8 0 171V80c0-26.5 21.5-48 48-48h416c26.5 0 48 21.5 48 48v91c0 7.8-3.9 15.1-9.7 19.8zM0 215.4v216.6c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V215.4L345.4 362.9c-27.2 22.3-66.5 22.3-93.7 0L0 215.4z"></path>
+        </svg>
+        <span class="text">Gmail</span>
+      </a>
 
+      <a href="https://instagram.com/ynrrobi" target="_blank" class="Btn instagram">
+        <svg class="svgIcon" viewBox="0 0 448 512" height="1.5em" xmlns="http://www.w3.org/2000/svg">
+          <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6-7.8 34.7-22.9 42.6-42.6 11.7-29.5 9-99.5 9-132.1s-2.6-102.7 9-132.1z"></path>
+        </svg>
+        <span class="text">Instagram</span>
+      </a>
+
+      <a href="mailto:yanuar.robiyanto@binus.ac.id" class="Btn outlook">
+        <svg class="svgIcon" viewBox="0 0 512 512" height="1.5em" xmlns="http://www.w3.org/2000/svg">
+          <path d="M502.3 190.8L327.4 338.7c-15.9 13.1-39 13.1-54.9 0L9.7 190.8C3.9 186.1 0 178.8 0 171V80c0-26.5 21.5-48 48-48h416c26.5 0 48 21.5 48 48v91c0 7.8-3.9 15.1-9.7 19.8zM0 215.4v216.6c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V215.4L345.4 362.9c-27.2 22.3-66.5 22.3-93.7 0L0 215.4z"></path>
+        </svg>
+        <span class="text">Outlook</span>
+      </a>
 
     </div>
-  </section> -->
-<section id="contact">
-  <h2>Contact Me</h2>
+  </section>
 
-  <div class="contact-btns">
-
-    
-
-    <a href="https://linkedin.com/in/yanuar-cahya-robiyanto" target="_blank" class="Btn linkedin">
-      <svg class="svgIcon" viewBox="0 0 448 512" height="1.5em" xmlns="http://www.w3.org/2000/svg">
-        <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
-      </svg>
-      <span class="text">LinkedIn</span>
-    </a>
-
-    <a href="mailto:yanuar.robiyanto22@email.com" class="Btn gmail">
-      <svg class="svgIcon" viewBox="0 0 512 512" height="1.5em" xmlns="http://www.w3.org/2000/svg">
-        <path d="M502.3 190.8L327.4 338.7c-15.9 13.1-39 13.1-54.9 0L9.7 190.8C3.9 186.1 0 178.8 0 171V80c0-26.5 21.5-48 48-48h416c26.5 0 48 21.5 48 48v91c0 7.8-3.9 15.1-9.7 19.8zM0 215.4v216.6c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V215.4L345.4 362.9c-27.2 22.3-66.5 22.3-93.7 0L0 215.4z"></path>
-      </svg>
-      <span class="text">Gmail</span>
-    </a>
-    <a href="https://instagram.com/ynrrobi" target="_blank" class="Btn instagram">
-      <svg class="svgIcon" viewBox="0 0 448 512" height="1.5em" xmlns="http://www.w3.org/2000/svg">
-        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6-7.8 34.7-22.9 42.6-42.6 11.7-29.5 9-99.5 9-132.1s2.7 102.7-9 132.1z"></path>
-      </svg>
-      <span class="text">Instagram</span>
-    </a>
-<a href="mailto:yanuar.robiyanto@binus.ac.id" class="Btn outlook">
-      <svg class="svgIcon" viewBox="0 0 512 512" height="1.5em" xmlns="http://www.w3.org/2000/svg">
-        <path d="M502.3 190.8L327.4 338.7c-15.9 13.1-39 13.1-54.9 0L9.7 190.8C3.9 186.1 0 178.8 0 171V80c0-26.5 21.5-48 48-48h416c26.5 0 48 21.5 48 48v91c0 7.8-3.9 15.1-9.7 19.8zM0 215.4v216.6c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V215.4L345.4 362.9c-27.2 22.3-66.5 22.3-93.7 0L0 215.4z"></path>
-      </svg>
-      <span class="text">Outlook</span>
-    </a>
-  </div>
-</section>
-
-
-  <!-- =====================================================
-       FOOTER
-  ====================================================== -->
+  <!-- FOOTER -->
   <footer>
     <p>© 2026 Yanuar Robiyanto</p>
   </footer>
 
-
-  <!-- =====================================================
-       MAIN SCRIPT
-  ====================================================== -->
   <script src="assets/js/main.js"></script>
-
 </body>
 </html>

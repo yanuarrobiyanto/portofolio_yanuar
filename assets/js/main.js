@@ -5,17 +5,17 @@
 /* Experiences */
 const experiences = [
   {
-  logo: "assets/images/experience/muf.png",
-  role: "Technical Writer",
-  company: "PT Mandiri Utama Finance",
-  location: "Jakarta, Indonesia",
-  flag: "🇮🇩",
-  date: "Feb 2025 - Feb 2026",
-  length: "1 Year",
-  type: "Internship",
-  mode: "Onsite",
-  desc: `
- <div class="exp-block">
+    logo: "assets/images/experience/muf.png",
+    role: "Technical Writer",
+    company: "PT Mandiri Utama Finance",
+    location: "Jakarta, Indonesia",
+    flag: "🇮🇩",
+    date: "Feb 2025 - Feb 2026",
+    length: "1 Year",
+    type: "Internship",
+    mode: "Onsite",
+    desc: `
+<div class="exp-block">
   <div class="exp-block-title">
     <span class="exp-ico">≡</span>
     <span class="exp-block-text">RESPONSIBILITIES</span>
@@ -57,32 +57,33 @@ const experiences = [
     </ul>
   </div>
 </div>
-  `
-}
-,
-  {logo: "assets/images/experience/binus.png",
-  role: "Promotions Team",
-  company: "BINUS University",
-  location: "Jakarta, Indonesia",
-  flag: "🇮🇩",
-  date: "Feb 2024 - Present",
-  length: "2 Year",
-  type: "Part-time",
-  mode: "Onsite",
-  desc: `
- <div class="exp-block">
+`
+  },
+
+  {
+    logo: "assets/images/experience/binus.png",
+    role: "Promotions Team",
+    company: "BINUS University",
+    location: "Jakarta, Indonesia",
+    flag: "🇮🇩",
+    date: "Feb 2024 - Present",
+    length: "2 Year",
+    type: "Part-time",
+    mode: "Onsite",
+    desc: `
+<div class="exp-block">
   <div class="exp-block-title">
     <span class="exp-ico">≡</span>
     <span class="exp-block-text">RESPONSIBILITIES</span>
   </div>
   <ul class="exp-list">
-  <li>Sold 60 graduate program registration forms within four months, consistently exceeding monthly targets.</li>
-  <li>Provided clear and detailed registration information for Master’s and Doctoral programs at BINUS Graduate Program.</li>
-  <li>Supported prospective students by explaining program benefits, requirements, and step-by-step registration procedures.</li>
-  <li>Supported the execution of multiple BINUS events to ensure smooth operations and successful outcomes.</li>
-  <li>Assisted supervisors in interviewing potential team members to evaluate fit and strengthen the team.</li>
-  <li>Trained and mentored new team members to help them adapt quickly and achieve optimal performance.</li>
-    </ul>
+    <li>Sold 60 graduate program registration forms within four months, consistently exceeding monthly targets.</li>
+    <li>Provided clear and detailed registration information for Master’s and Doctoral programs at BINUS Graduate Program.</li>
+    <li>Supported prospective students by explaining program benefits, requirements, and step-by-step registration procedures.</li>
+    <li>Supported the execution of multiple BINUS events to ensure smooth operations and successful outcomes.</li>
+    <li>Assisted supervisors in interviewing potential team members to evaluate fit and strengthen the team.</li>
+    <li>Trained and mentored new team members to help them adapt quickly and achieve optimal performance.</li>
+  </ul>
 </div>
 
 <div class="exp-divider"></div>
@@ -94,9 +95,9 @@ const experiences = [
       <span class="exp-block-text">WHAT I LEARNED</span>
     </div>
     <ul class="exp-list">
-    <li>Strengthened communication and persuasion skills in a professional sales and education environment.</li>
-    <li>Learned how to explain complex program information clearly and confidently to prospective students.</li>
-    <li>Developed leadership skills through mentoring and supporting new team members.</li>
+      <li>Strengthened communication and persuasion skills in a professional sales and education environment.</li>
+      <li>Learned how to explain complex program information clearly and confidently to prospective students.</li>
+      <li>Developed leadership skills through mentoring and supporting new team members.</li>
     </ul>
   </div>
 
@@ -106,25 +107,27 @@ const experiences = [
       <span class="exp-block-text">IMPACT</span>
     </div>
     <ul class="exp-list">
-     <li>Contributed to increased graduate program registrations by achieving 60 successful form submissions in 4 months.</li>
+      <li>Contributed to increased graduate program registrations by achieving 60 successful form submissions in 4 months.</li>
       <li>Exceeded monthly targets by maintaining consistent sales performance above expectations.</li>
       <li>Improved team readiness by supporting the selection, onboarding, and training of new team members.</li>
-      </ul>
+    </ul>
   </div>
 </div>
-  `
+`
   },
-    {logo: "assets/images/experience/fyp.png",
-  role: "Freshman Leader",
-  company: "BINUS University",
-  location: "Jakarta, Indonesia",
-  flag: "🇮🇩",
-  date: "Jul 2023 - Aug 2023",
-  length: "2 Month",
-  type: "Student Mentor",
-  mode: "Onsite",
-  desc: `
-  <div class="exp-block">
+
+  {
+    logo: "assets/images/experience/fyp.png",
+    role: "Freshman Leader",
+    company: "BINUS University",
+    location: "Jakarta, Indonesia",
+    flag: "🇮🇩",
+    date: "Jul 2023 - Aug 2023",
+    length: "2 Month",
+    type: "Student Mentor",
+    mode: "Onsite",
+    desc: `
+<div class="exp-block">
   <div class="exp-block-title">
     <span class="exp-ico">≡</span>
     <span class="exp-block-text">RESPONSIBILITIES</span>
@@ -166,18 +169,21 @@ const experiences = [
     </ul>
   </div>
 </div>
-  `
+`
   },
-    {logo: "assets/images/experience/kemenhan.png",
-  role: "Kader Muda Bela Negara",
-  company: "Kementrian Pertahanan RI",
-  location: "Bogor, Indonesia",
-  flag: "🇮🇩",
-  date: "Aug 2019 - Aug 2019",
-  length: "4 Days Month",
-  type: "National Defense Training Program",
-  mode: "Onsite",
-  desc: `
+
+  {
+    logo: "assets/images/experience/kemenhan.png",
+    role: "Kader Muda Bela Negara",
+    company: "Kementrian Pertahanan RI",
+    location: "Bogor, Indonesia",
+    flag: "🇮🇩",
+    date: "Aug 2019 - Aug 2019",
+    length: "4 Days",
+    type: "National Defense Training Program",
+    mode: "Onsite",
+    desc: `
+<div class="exp-block">
   <div class="exp-block-title">
     <span class="exp-ico">≡</span>
     <span class="exp-block-text">RESPONSIBILITIES</span>
@@ -220,10 +226,8 @@ const experiences = [
   </div>
 </div>
 `
-}
-  
+  }
 ];
-
 
 /* Projects */
 const projects = [
@@ -247,74 +251,62 @@ const certificates = [
     image: "assets/images/certificates/morphit.png",
     name: "Finalist of IT Business Competition MORPH.IT 2024",
     desc: "Finalist in a National IT Business Competition Organized by MORPH.IT"
-  }
-,
+  },
   {
     image: "assets/images/certificates/bgp.png",
     name: "Token Of Appreciation - BGP 2025",
     desc: "Renewed Contract as a Team Member, BINUS Graduate Program Promotions Team (2025/26)"
-  }
-,
+  },
   {
     image: "assets/images/certificates/cisco.png",
     name: "Certificate of Course Completion <br> Data Science",
     desc: "Finalist in national IT business competition organized by MORPH.IT."
-  }
-  ,
+  },
   {
     image: "assets/images/certificates/fl.png",
     name: "Freshman Leader Binusian 2027",
     desc: "Recognized as a Freshman Leader at Binusian 2027"
-  }
-  ,
+  },
   {
     image: "assets/images/certificates/bela.png",
     name: "Certificate of Participation <br> Bela Negara",
     desc: "Completed the National Defense Education Program (Bela Negara) organized by Kementrian Pertahanan RI."
-  }
-  ,
+  },
   {
     image: "assets/images/certificates/gui.png",
     name: "Certificate of Participation <br> GUI Design Workshop",
     desc: "Completed GUI Design Workshop organized by BINUS University."
-  }
-  ,
+  },
   {
     image: "assets/images/certificates/beagreat.png",
     name: "Be A Great Seller Training Program",
     desc: "Completed Training Program organized by BINUS University."
-  }
-  ,
+  },
   {
     image: "assets/images/certificates/misa.png",
     name: "Make It Stick: Attractive Presentations for Marketers Training Program",
     desc: "Completed Training Program organized by BINUS University."
-  }
-  ,
+  },
   {
     image: "assets/images/certificates/pc.png",
     name: "Persuasive Communication in Marketing Practice Training Program",
     desc: "Completed Training Program organized by BINUS University."
   }
-
-
 ];
-
-
 
 /* =====================================================
    2. DOM SELECTORS
 ===================================================== */
 
 const experienceList = document.getElementById("experienceList");
-const projectGrid    = document.getElementById("projectGrid");
-const certGrid       = document.getElementById("certGrid");
-const menu           = document.getElementById("menu");
-
+const projectGrid = document.getElementById("projectGrid");
+const certGrid = document.getElementById("certGrid");
+const menu = document.getElementById("menu");
 
 /* =====================================================
    3. RENDER FUNCTIONS
 ===================================================== */
+
 function renderExperiences() {
   experienceList.innerHTML = "";
 
@@ -362,7 +354,6 @@ function renderExperiences() {
       </div>
     `;
 
-    // Toggle behavior
     const btn = card.querySelector("[data-exp-toggle]");
     const label = btn.querySelector(".label");
 
@@ -374,11 +365,6 @@ function renderExperiences() {
     experienceList.appendChild(card);
   });
 }
-
-
-
-
-
 
 /* Render Projects */
 function renderProjects(filter = "all") {
@@ -406,7 +392,6 @@ function renderProjects(filter = "all") {
   });
 }
 
-
 /* Render Certificates */
 function renderCertificates() {
   certGrid.innerHTML = "";
@@ -416,22 +401,21 @@ function renderCertificates() {
     card.className = "cert-card";
     card.onclick = () => openCertModal(cert.image);
 
-   card.innerHTML = `
-  <div class="cert-thumb">
-    <img src="${cert.image}" alt="${cert.name.replace(/<br>/g, '')}">
-    <div class="cert-overlay">
-      <span class="cert-view">View detail ➜ </span>
-    </div>
-  </div>
+    card.innerHTML = `
+      <div class="cert-thumb">
+        <img src="${cert.image}" alt="${cert.name.replace(/<br>/g, "")}">
+        <div class="cert-overlay">
+          <span class="cert-view">View detail ➜ </span>
+        </div>
+      </div>
 
-  <h4>${cert.name}</h4>
-  <p>${cert.desc}</p>
-`;
+      <h4>${cert.name}</h4>
+      <p>${cert.desc}</p>
+    `;
 
     certGrid.appendChild(card);
   });
 }
-
 
 function openCertModal(imageSrc) {
   const modal = document.getElementById("certModal");
@@ -446,28 +430,24 @@ function closeCertModal() {
   modal.classList.remove("show");
 }
 
-
 /* =====================================================
    4. EVENT & HELPER FUNCTIONS
 ===================================================== */
 
-/* Filter Projects (called from HTML button) */
 function filterProjects(category) {
   renderProjects(category);
 }
 
-/* Toggle Mobile Menu */
 function toggleMenu() {
   menu.classList.toggle("show");
 }
 
-// Auto close mobile menu setelah klik link
 document.querySelectorAll(".menu a").forEach(link => {
   link.addEventListener("click", () => {
     menu.classList.remove("show");
   });
 });
-// Tutup menu kalau klik di luar menu (mobile)
+
 document.addEventListener("click", (e) => {
   const isClickInsideMenu = menu.contains(e.target);
   const isHamburger = e.target.classList.contains("hamburger");
@@ -504,13 +484,12 @@ if (themeToggle) {
 }
 
 /* =====================================================
-   7. DEVFLASH SMOOTH CURSOR PARTICLES (FIXED VERSION)
+   7. SMOOTH CURSOR PARTICLES
 ===================================================== */
 
 const canvas = document.getElementById("cursorCanvas");
 const ctx = canvas.getContext("2d");
 
-// Setup canvas (DPR fix)
 function resizeCanvas() {
   const dpr = window.devicePixelRatio || 1;
   const rect = canvas.getBoundingClientRect();
@@ -524,7 +503,6 @@ function resizeCanvas() {
 resizeCanvas();
 window.addEventListener("resize", resizeCanvas);
 
-// Glow blend mode
 ctx.globalCompositeOperation = "lighter";
 
 let particles = [];
@@ -532,9 +510,8 @@ let mouse = { x: 0, y: 0 };
 let lastMoveTime = Date.now();
 let smoothMouse = { x: 0, y: 0 };
 
-// Create particle (DevFlash style)
 function createParticle(x, y) {
-  const initialSize = Math.random() * 1 + 2; // 1–2
+  const initialSize = Math.random() * 1 + 2;
 
   return {
     x,
@@ -552,34 +529,29 @@ function createParticle(x, y) {
   };
 }
 
-// Track mouse position only
 document.addEventListener("mousemove", (e) => {
   mouse.x = e.clientX;
   mouse.y = e.clientY;
-  lastMoveTime = Date.now(); // catat waktu terakhir bergerak
+  lastMoveTime = Date.now();
 });
 
-// Main animation loop (SMOOTH VERSION)
 function animate() {
   const width = canvas.getBoundingClientRect().width;
   const height = canvas.getBoundingClientRect().height;
 
   ctx.clearRect(0, 0, width, height);
 
-  // Smooth follow mouse (LERP)
   smoothMouse.x += (mouse.x - smoothMouse.x) * 0.15;
   smoothMouse.y += (mouse.y - smoothMouse.y) * 0.15;
 
-  // Spawn partikel pelan & stabil
   const now = Date.now();
-const isMoving = now - lastMoveTime < 60; // 60 ms terakhir masih dianggap bergerak
+  const isMoving = now - lastMoveTime < 60;
 
-if (isMoving) {
-  for (let i = 0; i < 4; i++) {
-    particles.push(createParticle(smoothMouse.x, smoothMouse.y));
+  if (isMoving) {
+    for (let i = 0; i < 4; i++) {
+      particles.push(createParticle(smoothMouse.x, smoothMouse.y));
+    }
   }
-}
-
 
   if (particles.length > 600) {
     particles.splice(0, 100);
@@ -588,14 +560,12 @@ if (isMoving) {
   for (let i = particles.length - 1; i >= 0; i--) {
     const p = particles[i];
 
-    // Damping velocity (biar halus)
     p.vx *= 0.96;
     p.vy *= 0.96;
 
     p.x += p.vx;
     p.y += p.vy;
 
-    // Shrink smooth
     p.size *= 0.965;
 
     drawParticle(p);
@@ -608,7 +578,6 @@ if (isMoving) {
   requestAnimationFrame(animate);
 }
 
-// ====== FUNGSI PERSIS DARI GAMBAR KAMU ======
 function drawParticle(particle) {
   const alpha = Math.min(1, particle.size / particle.initialSize + 0.1);
 
@@ -639,7 +608,6 @@ function drawParticle(particle) {
     ctx.fill();
   }
 }
-// ====== END FUNGSI DEVFLASH ======
 
 animate();
 
@@ -660,4 +628,3 @@ profileImages.forEach(img => {
     canvas.style.opacity = "1";
   });
 });
-
