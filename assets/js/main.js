@@ -231,18 +231,143 @@ const experiences = [
 
 /* Projects */
 const projects = [
-  {
-    image: "assets/images/projects/dashboard.png",
-    name: "Sales Dashboard",
-    category: "bi",
-    demo: "https://yourdemo.com"
+  // {
+  //   image: "assets/images/projects/Sales Dashboard.png",
+  //   name: "Amazon India",
+  //   category: "bi",
+  //   desc: "belom",
+  //   demo: "https://yourdemo.com"
+  // },
+  // {
+  //   image: "assets/images/projects/Sales Dashboard.png",
+  //   name: "Superstore",
+  //   category: "bi",
+  //   desc: "belom",
+  //   demo: "https://yourdemo.com"
+  // },
+  // {
+  //   image: "assets/images/projects/Sales Dashboard.png",
+  //   name: "Sales Dashboard",
+  //   category: "bi",
+  //   desc: "belom",
+  //   demo: "https://yourdemo.com"
+  // },
+  // {
+  //   image: "assets/images/projects/Sales Dashboard.png",
+  //   name: "Sales Dashboard",
+  //   category: "bi",
+  //   desc: "belom",
+  //   demo: "https://yourdemo.com"
+  // },
+    {
+  image: "assets/images/projects/ordereasev1.png",
+  name: "OrderEase v1",
+  category: "ui/ux",
+  desc: `<strong>OrderEase</strong> is a <strong>barcode-based restaurant ordering website</strong> designed to simplify the ordering process for customers. 
+        Customers simply <strong>scan the code at the table</strong> to view the <strong>digital menu</strong>, choose their items, place an order, 
+        and complete the <strong>payment without installing any application</strong>. This system helps restaurants <strong>speed up service</strong>, 
+        <strong>reduce waiting time</strong>, and improve the <strong>overall customer experience</strong>.`,
+  demo: "https://www.figma.com/proto/tjEmPAz7DOb2ke30sHZVxB/OrderEase-v1?page-id=0%3A1&node-id=44-389&viewport=1939%2C11%2C0.13&t=sLqiulnl3omRck8p-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=44%3A389&show-proto-sidebar=1"
   },
   {
-    image: "assets/images/projects/oil-drop.png",
-    name: "Oil Drop App",
-    category: "web",
-    demo: "https://yourdemo.com"
+  image: "assets/images/projects/ordereasev2.png",
+  name: "OrderEase v2",
+  category: "ui/ux",
+  desc: `<strong>OrderEase</strong> is a <strong>digital innovation</strong> that simplifies restaurant ordering through <strong>QR scanning at the table</strong>. 
+        It supports <strong>multiple payment methods</strong>, including <strong>e-wallets</strong>, and offers <strong>dine-in, take-away, and delivery options</strong>. 
+        The main goal is to help <strong>small and medium businesses</strong> adopt <strong>digital solutions</strong> to improve <strong>operational efficiency</strong> and enhance the <strong>customer experience</strong>.`,
+  demo: "https://www.figma.com/proto/Box72jtIfws4x7aJ4zxrtz/OrderEase-v2?page-id=0%3A1&node-id=65-5689&viewport=-112%2C96%2C0.11&t=Au9dUcsEhfdxjIWw-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=63%3A5294&show-proto-sidebar=1"
+  },
+    { 
+    image: "assets/images/projects/pondokcitra.png",
+    name: "Pondok Citra",
+    category: "ui/ux",
+    desc: `<strong>Pondok Citra</strong> is a digital application designed to support <strong>Padang culinary MSMEs in Bekasi</strong> through a <strong>modern, fast, and convenient ordering system</strong>. 
+        Customers can browse the <strong>complete menu</strong>, enjoy <strong>exclusive promotions</strong>, and make <strong>cashless payments via QR code</strong> for <strong>dine-in or takeout</strong>. 
+        This application helps business owners improve <strong>operational efficiency</strong> while delivering more <strong>professional and integrated services</strong>.`,
+    demo: "https://www.figma.com/proto/AV39iMEABmg4bY1JqGLDDv/RM-Pondok-Citra?page-id=51%3A149&node-id=131-3037&viewport=254%2C464%2C0.26&t=pgeKmzQXwwYdWVjh-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=131%3A3037&show-proto-sidebar=1"
+  },
+  {
+    image: "assets/images/projects/sos.png",
+    name: "SOS",
+    category: "ui/ux",
+    desc: `<strong>The SOS App</strong> is designed to <strong>enhance safety</strong> by providing <strong>rapid emergency response</strong>. It offers <strong>instant ambulance dispatch</strong>, 
+        integrates with <strong>smartwatches</strong> to monitor <strong>heart rate, steps, and calories</strong>, and displays <strong>nearby hospitals</strong> with <strong>distance, ratings, and navigation support</strong>. 
+        The app also features <strong>doctor consultations</strong> and an <strong>AI-powered chatbot</strong>, along with <strong>secure access to personal medical records</strong>. In addition to the user version, it includes 
+        a <strong>dedicated interface for ambulance drivers</strong>, enabling them to receive <strong>emergency location details</strong> and respond to patients <strong>quickly and accurately</strong>.`,
+    demo: "https://www.figma.com/proto/fgguznUES7hyDxPYDr3mwK/SOS?page-id=0%3A1&node-id=2-1351&viewport=-758%2C373%2C0.49&t=hAhgzCMgzCkYXltv-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2%3A1350&show-proto-sidebar=1"
+  },
+    {
+    image: "assets/images/projects/perpusnas.png",
+    name: "Perpusnas",
+    category: "ui/ux",
+    desc: `<strong>The National Library App</strong> is a <strong>digitally integrated physical book lending system</strong>. Users request <strong>book loans through the application</strong>, 
+        and staff verify each request using an <strong>approval code</strong> before the books can be taken home. The app also displays <strong>return schedules</strong> to help users meet <strong>
+        loan deadlines</strong> while supporting more <strong>organized and efficient collection management</strong>.`,
+    demo: "https://www.figma.com/proto/t7aTHxHduwwp8XzGBzrSt2/Perpusnas?node-id=416-13327&t=TI7S5t9ZdxEZG53U-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=415%3A8680&show-proto-sidebar=1"
+  },
+  {
+    image: "assets/images/projects/takeplace.png",
+    name: "Take Place",
+    category: "ui/ux",
+    desc: `<strong>TakePlace</strong> is a <strong>sports venue rental app</strong> that helps users find and book venues based on <strong>category and proximity</strong>. Users can select a <strong>sport category</strong>, 
+        check <strong>real-time availability</strong>, and choose a <strong>rental date and time</strong> from available slots.The app also offers <strong>social features</strong> to call or chat with friends for organizing activities together. 
+        Payments can be made digitally via <strong>bank transfer or QR code</strong>, ensuring a <strong>convenient and seamless booking experience</strong>.`,
+    demo: "https://www.figma.com/proto/Ojuicqc3L6zGuMiH4NwH06/TakePlace?page-id=0%3A1&node-id=1-471&viewport=570%2C539%2C0.28&t=x6BldbZ71rTpoVNb-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A399&show-proto-sidebar=1"
+  },
+  {
+    image: "assets/images/projects/montirin.png",
+    name: "Montirin",
+    category: "ui/ux",
+    desc: `<strong>Montirin</strong> is an <strong>automotive service application</strong> that allows users to <strong>schedule vehicle servicing</strong>, book <strong>partner workshops</strong>, and find <strong>nearby repair shops based on location</strong>. 
+        The app provides <strong>emergency services</strong> such as <strong>towing assistance</strong> in case of breakdowns or road incidents, including a <strong>login-free emergency feature</strong> that enables users to quickly contact the nearest repair 
+        shop and move their vehicle to a safer location. Montirin delivers <strong>practical, fast, and integrated vehicle maintenance solutions</strong> within a <strong>single digital platform</strong>.`,
+    demo: "https://www.figma.com/proto/F75IQVkAS7DKYfhGQXt0Pk/Abang-Montir?page-id=0%3A1&node-id=425-3807&viewport=418%2C544%2C0.12&t=qyN8MifLzY6OYXVl-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=425%3A3914&show-proto-sidebar=1"
+  },
+    {
+    image: "assets/images/projects/oildrop.png",
+    name: "OilDrop App",
+    category: "ui/ux",
+    desc: `<strong>OilDrop</strong> is the <strong>first project I designed</strong>, created to <strong>reduce used oil waste</strong> through a <strong>point-based reward system</strong> that can be redeemed at <strong>partner stores</strong>. 
+        The app provides both <strong>pickup and drop-off options</strong> for collecting used oil, along with <strong>educational content</strong> to raise awareness about <strong>proper oil recycling</strong> and environmental responsibility.`,
+    demo: "https://www.figma.com/proto/LbF16Ex4B0ZESfmKgyf1IM/OilDropp?page-id=0%3A1&node-id=3-245&p=f&viewport=564%2C2666%2C0.32&t=qXgPcpZW7uxeUV7u-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=3%3A232&show-proto-sidebar=1"
   }
+  
+  // {
+  //   image: "assets/images/projects/Sales Dashboard.png",
+  //   name: "Sales Dashboard",
+  //   category: "bi",
+  //   desc: "",
+  //   demo: "https://yourdemo.com"
+  // },
+  // {
+  //   image: "assets/images/projects/Sales Dashboard.png",
+  //   name: "Sales Dashboard",
+  //   category: "ba",
+  //   desc: "",
+  //   demo: "https://yourdemo.com"
+  // },
+  // {
+  //   image: "assets/images/projects/Sales Dashboard.png",
+  //   name: "Sales Dashboard",
+  //   category: "bi",
+  //   desc: "",
+  //   demo: "https://yourdemo.com"
+  // },
+  // {
+  //   image: "assets/images/projects/Sales Dashboard.png",
+  //   name: "Sales Dashboard",
+  //   category: "bi",
+  //   desc: "",
+  //   demo: "https://yourdemo.com"
+  // },
+  // {
+  //   image: "assets/images/projects/Sales Dashboard.png",
+  //   name: "Sales Dashboard",
+  //   category: "bi",
+  //   desc: "",
+  //   demo: "https://yourdemo.com"
+  // }
 ];
 
 /* Certificates */
@@ -384,8 +509,13 @@ function renderProjects(filter = "all") {
       <div class="project-content">
         <span class="project-category">${project.category.toUpperCase()}</span>
         <h3>${project.name}</h3>
+
+        <p class="project-desc">
+        ${project.desc || " "}
+        </p>
+
         <a href="${project.demo}" target="_blank" title="Live Demo">↗</a>
-      </div>
+        </div>
     `;
 
     projectGrid.appendChild(card);

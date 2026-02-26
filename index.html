@@ -45,10 +45,19 @@
   <section id="home" class="hero">
     <div class="hero-container">
 
-      <div class="hero-image">
-        <img src="assets/images/profile/fotoo.jpeg" alt="Profile Photo">
-        <span class="badge">Business Intelligence</span>
-      </div>
+      <div class="hero-image hero-3d">
+
+  <div class="card-hero">
+    <div class="wrapper-hero">
+      <img src="assets/images/profile/fotoo.jpeg" class="cover-image-hero" alt="Profile Photo">
+    </div>
+
+    <img src="assets/images/profile/fotoobg.png" class="character-hero" alt="Profile No BG">
+  </div>
+
+  <span class="badge">Business Intelligence</span>
+</div>
+
 
       <div class="hero-text">
         <p class="small-text">Hello there, I'm</p>
@@ -90,22 +99,20 @@
       <img src="assets/images/profile/foto.png" alt="Profile Photo">
 
       <p class="description">
-        Information Systems student at <b>Bina Nusantara University</b> with a <b>Business Intelligence</b>
-        concentration and <b>1 year of IT internship experience</b> focused on <b>business and system
-        requirements analysis</b>, <b>solution design</b>, and <b>application implementation support</b> aligned with
-        <b>SDLC</b> standards. Frequently involved in preparing <b>functional and technical specifications</b>, including
-        <b>system architecture</b>, <b>application design</b>, <b>process logic</b>, and <b>operational workflows</b>. Proficient in
-        using <b>SQL queries</b> to explore system data structures and contents, support <b>analysis and process
-        modeling</b>, validate system outputs, and produce <b>standardized, data-driven reports</b>. Additionally,
-        handled <b>application testing</b> to ensure features and outputs met specifications, and documented
-        <b>analysis and testing results</b> as references for <b>development and evaluation</b>.
+        An <b>Information Systems student at Bina Nusantara University</b> with a concentration in 
+        <b>Business Intelligence</b> and <b>1 year of IT internship experience</b>. 
+        Focused on <b>business and system requirements analysis</b>, <b>solution design</b>, 
+        and <b>SDLC-based implementation support</b>. 
+        Experienced in developing functional and technical specifications, performing 
+        <b>SQL-based data analysis</b>, validating system outputs, and preparing data-driven reports. 
+        Also involved in <b>application testing and documentation</b> to support system development and improvement.
       </p>
     </div>
   </section>
 
   <!-- SKILLS -->
   <section id="skills">
-    <h2>Skills</h2>
+    <h2>Technical Skills </h2>
 
     <div class="skills-grid">
       <div class="skill-card">
@@ -198,13 +205,14 @@
 
   <!-- PROJECTS -->
   <section id="projects">
-    <h2>Projects</h2>
+    <h2>Project Portfolio</h2>
 
     <div class="project-filters">
       <button onclick="filterProjects('all')">All</button>
       <button onclick="filterProjects('bi')">Business Intelligence</button>
-      <button onclick="filterProjects('uiux')">UI/UX</button>
-      <button onclick="filterProjects('web')">Web App</button>
+      <button onclick="filterProjects('ui/ux')">UI/UX</button>
+      <button onclick="filterProjects('ba')">Business Analyst</button>
+      <button onclick="filterProjects('DB')">Data Warehouse</button>
     </div>
 
     <div class="project-grid" id="projectGrid"></div>
