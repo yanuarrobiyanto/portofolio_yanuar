@@ -232,8 +232,8 @@ const experiences = [
 /* Projects */
 const projects = [
   // {
-  //   image: "assets/images/projects/Sales Dashboard.png",
-  //   name: "Amazon India",
+  //   image: "assets/images/projects/skincare.png",
+  //   name: "Healthcare (Skincare)",
   //   category: "bi",
   //   desc: "belom",
   //   demo: "https://yourdemo.com"
@@ -372,51 +372,56 @@ const projects = [
 
 /* Certificates */
 const certificates = [
-  {
-    image: "assets/images/certificates/morphit.png",
-    name: "Finalist of IT Business Competition MORPH.IT 2024",
-    desc: "Finalist in a National IT Business Competition Organized by MORPH.IT"
-  },
-  {
-    image: "assets/images/certificates/bgp.png",
-    name: "Token Of Appreciation - BGP 2025",
-    desc: "Renewed Contract as a Team Member, BINUS Graduate Program Promotions Team (2025/26)"
-  },
-  {
-    image: "assets/images/certificates/cisco.png",
-    name: "Certificate of Course Completion <br> Data Science",
-    desc: "Finalist in national IT business competition organized by MORPH.IT."
-  },
-  {
-    image: "assets/images/certificates/fl.png",
-    name: "Freshman Leader Binusian 2027",
-    desc: "Recognized as a Freshman Leader at Binusian 2027"
-  },
-  {
-    image: "assets/images/certificates/bela.png",
-    name: "Certificate of Participation <br> Bela Negara",
-    desc: "Completed the National Defense Education Program (Bela Negara) organized by Kementrian Pertahanan RI."
-  },
-  {
-    image: "assets/images/certificates/gui.png",
-    name: "Certificate of Participation <br> GUI Design Workshop",
-    desc: "Completed GUI Design Workshop organized by BINUS University."
-  },
-  {
-    image: "assets/images/certificates/beagreat.png",
-    name: "Be A Great Seller Training Program",
-    desc: "Completed Training Program organized by BINUS University."
-  },
-  {
-    image: "assets/images/certificates/misa.png",
-    name: "Make It Stick: Attractive Presentations for Marketers Training Program",
-    desc: "Completed Training Program organized by BINUS University."
-  },
-  {
-    image: "assets/images/certificates/pc.png",
-    name: "Persuasive Communication in Marketing Practice Training Program",
-    desc: "Completed Training Program organized by BINUS University."
-  }
+   {
+  image: "assets/images/certificates/muf.png",
+  name: "Technical Writer Internship Certificate",
+  desc: "Completed a technical writing internship focused on system documentation and analysis."
+},
+{
+  image: "assets/images/certificates/morphit.png",
+  name: "Finalist MORPH.IT IT Business Competition 2024",
+  desc: "Selected as a finalist in a national IT business innovation competition."
+},
+{
+  image: "assets/images/certificates/bgp.png",
+  name: "Token Of Appreciation BGP 2025",
+  desc: "Recognized for contributions as a promotions team member."
+},
+{
+  image: "assets/images/certificates/cisco.png",
+  name: "Data Science Course Certificate",
+  desc: "Completed training in data analytics and artificial intelligence fundamentals."
+},
+{
+  image: "assets/images/certificates/fl.png",
+  name: "Freshman Leader Binusian 2027",
+  desc: "Mentored first-year students during the BINUS orientation program."
+},
+{
+  image: "assets/images/certificates/bela.png",
+  name: "Bela Negara National Defense Program",
+  desc: "Completed the national defense education program."
+},
+{
+  image: "assets/images/certificates/gui.png",
+  name: "GUI Design Workshop",
+  desc: "Completed a workshop on graphical user interface design."
+},
+{
+  image: "assets/images/certificates/beagreat.png",
+  name: "Be A Great Seller Training",
+  desc: "Completed training in sales strategy and customer engagement."
+},
+{
+  image: "assets/images/certificates/misa.png",
+  name: "Attractive Presentations for Marketers",
+  desc: "Completed training in effective marketing presentation techniques."
+},
+{
+  image: "assets/images/certificates/pc.png",
+  name: "Persuasive Communication in Marketing",
+  desc: "Completed training in persuasive communication for marketing practice."
+}
 ];
 
 /* =====================================================
