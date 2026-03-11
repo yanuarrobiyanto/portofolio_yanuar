@@ -384,12 +384,12 @@ const certificates = [
 },
 {
   image: "assets/images/certificates/bgp.png",
-  name: "Token Of Appreciation BGP 2025",
+  name: "Token of Appreciation BGP 2025",
   desc: "Recognized for contributions as a promotions team member."
 },
 {
   image: "assets/images/certificates/cisco.png",
-  name: "Data Science Course Certificate",
+  name: "Data Science Course Completion Certificate",
   desc: "Completed training in data analytics and artificial intelligence fundamentals."
 },
 {
@@ -399,8 +399,8 @@ const certificates = [
 },
 {
   image: "assets/images/certificates/bela.png",
-  name: "Bela Negara National Defense Program",
-  desc: "Completed the national defense education program."
+  name: "Bela Negara National Defense Training",
+  desc: "Completed the Indonesian national defense education program."
 },
 {
   image: "assets/images/certificates/gui.png",
@@ -409,7 +409,7 @@ const certificates = [
 },
 {
   image: "assets/images/certificates/beagreat.png",
-  name: "Be A Great Seller Training",
+  name: "Be a Great Seller Training Program",
   desc: "Completed training in sales strategy and customer engagement."
 },
 {
@@ -419,7 +419,7 @@ const certificates = [
 },
 {
   image: "assets/images/certificates/pc.png",
-  name: "Persuasive Communication in Marketing",
+  name: "Persuasive Communication in Marketing Practice",
   desc: "Completed training in persuasive communication for marketing practice."
 }
 ];
