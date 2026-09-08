@@ -5,6 +5,61 @@
 /* Experiences */
 const experiences = [
   {
+    logo: "assets/images/experience/bi.png",
+    role: "Digital Transformation Analyst",
+    company: "Bank Indonesia",
+    location: "Jakarta, Indonesia",
+    flag: "🇮🇩",
+    date: "Apr 2026 - Oct 2026",
+    length: "7 Months",
+    type: "Internship",
+    mode: "Onsite",
+    desc: `
+<div class="exp-block">
+  <div class="exp-block-title">
+    <span class="exp-ico">≡</span>
+    <span class="exp-block-text">RESPONSIBILITIES</span>
+  </div>
+  <ul class="exp-list">
+  <ul>
+    <li>Developed two internal applications, OVERSYS and SAKSI, using Microsoft Power Apps and Microsoft SharePoint, reaching approximately 80% implementation progress to support business process digitalization and regulatory reporting.</li>
+    <li>Designed and developed the DIGIFESTAB3 Web Application using Google Apps Script as an integrated digital platform for competition management and monitoring, featuring schedule and match result management, centralized documentation, competition information, and role-based access control.</li>
+    <li>Designed UI/UX interfaces and performed data cleaning, validation, transformation, and integration to improve data quality and support monitoring and data-driven decision-making.</li>
+    <li>Conducted regulatory benchmarking across five countries to analyze payment system regulations and provide insights for technical documentation and digital solution development in accordance with Bank Indonesia regulations.</li>
+    <li>Participated in Payment System Oversight activities, including field inspections of licensed KUPVA BB (Money Changer), to support compliance monitoring and payment system supervision.</li>
+  </ul>
+</div>
+
+<div class="exp-divider"></div>
+
+<div class="exp-grid-2">
+  <div class="exp-block">
+    <div class="exp-block-title">
+      <span class="exp-ico">💡</span>
+      <span class="exp-block-text">WHAT I LEARNED</span>
+    </div>
+    <ul class="exp-list">
+      <li>Strengthened my ability to translate business processes, regulatory requirements, and operational needs into practical digital solutions.</li>
+      <li>Gained hands-on experience in low-code application development, data management, UI/UX design, and system implementation using Microsoft Power Apps, Microsoft SharePoint, and Google Apps Script.</li>
+      <li>Developed a deeper understanding of payment system regulations, regulatory benchmarking, and oversight processes, as well as how technology can support regulatory and operational activities.</li>
+    </ul>
+  </div>
+
+  <div class="exp-block">
+    <div class="exp-block-title">
+      <span class="exp-ico">🚀</span>
+      <span class="exp-block-text">IMPACT</span>
+    </div>
+    <ul class="exp-list">
+      <li>Contributed to the digitalization of internal business processes through the development of OVERSYS and SAKSI, with implementation progress reaching approximately 80%.</li>
+      <li>Contributed to the development of an integrated DIGIFESTAB3 digital platform that centralized competition information, schedules, results, documentation, and monitoring, improving efficiency and accessibility of event management.</li>
+      <li>Supported data-driven monitoring and regulatory activities by improving data quality, conducting international regulatory benchmarking, and contributing to payment system oversight activities.</li>
+    </ul>
+  </div>
+</div>
+`
+  },
+  {
     logo: "assets/images/experience/muf.png",
     role: "Technical Writer",
     company: "PT Mandiri Utama Finance",
@@ -67,7 +122,7 @@ const experiences = [
     location: "Jakarta, Indonesia",
     flag: "🇮🇩",
     date: "Feb 2024 - Present",
-    length: "2 Year",
+    length: "2 Years",
     type: "Part-time",
     mode: "Onsite",
     desc: `
@@ -123,7 +178,7 @@ const experiences = [
     location: "Jakarta, Indonesia",
     flag: "🇮🇩",
     date: "Jul 2023 - Aug 2023",
-    length: "2 Month",
+    length: "2 Months",
     type: "Student Mentor",
     mode: "Onsite",
     desc: `
