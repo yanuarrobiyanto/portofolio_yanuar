@@ -388,14 +388,24 @@ const certificates = [
   desc: "Recognized for contributions as a promotions team member."
 },
 {
-  image: "assets/images/certificates/cisco.png",
-  name: "Data Science Course Completion Certificate",
-  desc: "Completed training in data analytics and artificial intelligence fundamentals."
-},
-{
   image: "assets/images/certificates/fl.png",
   name: "Freshman Leader Binusian 2027",
   desc: "Mentored first-year students during the BINUS orientation program."
+},
+{
+  image: "assets/images/certificates/da.png",
+  name: "Intro to Data Analytics Certificate",
+  desc: "Completed an introductory course in data analytics."
+},
+{
+  image: "assets/images/certificates/datasciencewithr.png",
+  name: "Introduction to Data Science with R Certificate",
+  desc: "Completed an introductory course in data science with R."
+},
+{
+  image: "assets/images/certificates/cisco.png",
+  name: "Data Science Course Completion Certificate",
+  desc: "Completed training in data analytics and artificial intelligence fundamentals."
 },
 {
   image: "assets/images/certificates/bela.png",
