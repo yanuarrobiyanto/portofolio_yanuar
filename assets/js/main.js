@@ -22,11 +22,12 @@ const experiences = [
   </div>
   <ul class="exp-list">
   <ul>
-    <li>Developed two internal applications, OVERSYS and SAKSI, using Microsoft Power Apps and Microsoft SharePoint, reaching approximately 80% implementation progress.</li>
-    <li>Designed and developed the DIGIFESTAB3 Web Application using Google Apps Script for competition management and monitoring, including schedules, match results, documentation, competition information, and role-based access control.</li>
-    <li>Designed UI/UX interfaces and performed data cleaning, validation, transformation, and integration to support data quality and monitoring.</li>
-    <li>Conducted regulatory benchmarking across five countries to support payment system regulatory analysis and technical documentation.</li>
-    <li>Participated in Payment System Oversight activities, including field inspections of licensed KUPVA BB (Money Changer).</li>
+    <li>Developed 3 applications (OVERSYS, SAKSI, and DIGIFESTAB3) to support business process digitalization, data management, and activity monitoring.</li>
+    <li>Designed and developed OVERSYS and SAKSI using Microsoft Power Apps and SharePoint, achieving approximately 80% implementation progress to support internal business processes.</li>
+    <li>Designed and developed DIGIFESTAB3 using Google Apps Script, centralizing competition schedules, match results, documentation, competition information, and role-based access control to support efficient competition management and monitoring. </li>
+    <li>Designed UI/UX interfaces and performed data cleaning, validation, transformation, and integration to improve data quality, consistency, and monitoring.</li>
+    <li>Conducted regulatory benchmarking across 5 countries and formulated digital solution recommendations aligned with Bank Indonesia regulations to support payment system regulatory analysis.</li>
+    <li>Supported Payment System Oversight activities, including field inspections of licensed KUPVA BB (Money Changers).</li>
   </ul>
 </div>
 
@@ -39,9 +40,10 @@ const experiences = [
       <span class="exp-block-text">WHAT I LEARNED</span>
     </div>
     <ul class="exp-list">
-      <li>Strengthened my ability to translate business processes, regulatory requirements, and operational needs into practical digital solutions.</li>
-      <li>Gained hands-on experience in application development, data management, UI/UX, and system implementation.</li>
-      <li>Developed knowledge of payment system regulations, regulatory benchmarking, and oversight processes.</li>
+      <li>Strengthened my ability to translate business processes and regulatory requirements into practical digital solutions.</li>
+      <li>Gained hands-on experience in application development, UI/UX design, data management, and system implementation.</li>
+      <li>Strengthened my understanding of data cleaning, validation, transformation, and integration to maintain data quality and reliability.</li>
+      <li>Developed practical knowledge of payment system regulations, regulatory benchmarking, and Payment System Oversight.</li>
     </ul>
   </div>
 
@@ -51,7 +53,7 @@ const experiences = [
       <span class="exp-block-text">IMPACT</span>
     </div>
     <ul class="exp-list">
-      <li>Contributed to the digitalization of internal business processes through OVERSYS and SAKSI.</li>
+      <li>Developed OVERSYS and SAKSI to support the digitalization of internal business processes, achieving approximately 80% implementation progress.</li>
       <li>Developed an integrated DIGIFESTAB3 platform that centralized competition information, schedules, results, documentation, and monitoring.</li>
       <li>Supported data-driven monitoring and regulatory activities through data management, regulatory benchmarking, and payment system oversight.</li>
     </ul>
