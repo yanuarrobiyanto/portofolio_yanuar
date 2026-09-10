@@ -41,8 +41,7 @@ const experiences = [
     <ul class="exp-list">
       <li>Strengthened skills in business process analysis and digital solution design.</li>
       <li>Gained hands-on experience in application development, UI/UX, data management, and system implementation.</li>
-      <li>Strengthened expertise in data cleaning, validation, transformation, and integration.</li>
-      <li>Developed knowledge of payment system regulations, regulatory benchmarking, and oversight.</li>
+      <li>Strengthened skills in data cleaning, validation, transformation, and integration.</li>
     </ul>
   </div>
 
@@ -52,9 +51,9 @@ const experiences = [
       <span class="exp-block-text">IMPACT</span>
     </div>
     <ul class="exp-list">
-      <li>Developed OVERSYS and SAKSI, supporting the digitalization of internal business processes with approximately 80% implementation progress.</li>
-      <li>Developed DIGIFESTAB3, centralizing competition information, schedules, results, documentation, and monitoring.</li>
-      <li>Supported data-driven monitoring and regulatory analysis through data management and regulatory benchmarking.</li>
+      <li>Developed OVERSYS and SAKSI to support internal business process digitalization, reaching approximately 80% implementation progress.</li>
+      <li>Developed DIGIFESTAB3 as a centralized platform for competition management and monitoring.</li>
+      <li>Supported data-driven monitoring and regulatory analysis through data management and benchmarking.</li>
     </ul>
   </div>
 </div>
