@@ -23,7 +23,7 @@ const experiences = [
   <ul class="exp-list">
     <li>Developed 3 applications (OVERSYS, SAKSI, and DIGIFESTAB3) to support business process digitalization, data management, and activity monitoring.</li>
     <li>Designed and developed OVERSYS and SAKSI using Microsoft Power Apps and SharePoint, achieving approximately 80% implementation progress to support internal business processes.</li>
-    <li>Designed and developed DIGIFESTAB3 using Google Apps Script, centralizing competition schedules, match results, documentation, competition information, and role-based access control to support efficient competition management and monitoring. </li>
+    <li>Designed and developed DIGIFESTAB3 using Google Apps Script, centralizing competition schedules, match results, documentation, competition information, and role-based access control to support efficient competition management and monitoring.</li>
     <li>Designed UI/UX interfaces and performed data cleaning, validation, transformation, and integration to improve data quality, consistency, and monitoring.</li>
     <li>Conducted regulatory benchmarking across 5 countries and formulated digital solution recommendations aligned with Bank Indonesia regulations to support payment system regulatory analysis.</li>
     <li>Supported Payment System Oversight activities, including field inspections of licensed KUPVA BB (Money Changers).</li>
