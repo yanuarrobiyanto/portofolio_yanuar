@@ -21,12 +21,12 @@ const experiences = [
     <span class="exp-block-text">RESPONSIBILITIES</span>
   </div>
   <ul class="exp-list">
-    <li>Developed 3 applications (OVERSYS, SAKSI, and DIGIFESTAB3) to support business process digitalization, data management, and activity monitoring.</li>
-    <li>Designed and developed OVERSYS and SAKSI using Microsoft Power Apps and SharePoint, achieving approximately 80% implementation progress to support internal business processes.</li>
-    <li>Designed and developed DIGIFESTAB3 using Google Apps Script, centralizing competition schedules, match results, documentation, competition information, and role-based access control to support efficient competition management and monitoring.</li>
-    <li>Designed UI/UX interfaces and performed data cleaning, validation, transformation, and integration to improve data quality, consistency, and monitoring.</li>
-    <li>Conducted regulatory benchmarking across 5 countries and formulated digital solution recommendations aligned with Bank Indonesia regulations to support payment system regulatory analysis.</li>
-    <li>Supported Payment System Oversight activities, including field inspections of licensed KUPVA BB (Money Changers).</li>
+    <li>Developed 3 applications (OVERSYS, SAKSI, and DIGIFESTAB3) for business process digitalization and activity monitoring.</li>
+    <li>Designed and developed OVERSYS and SAKSI using Microsoft Power Apps and SharePoint, achieving approximately 80% implementation progress.</li>
+    <li>Designed and developed DIGIFESTAB3 using Google Apps Script to centralize competition schedules, results, documentation, and information.</li>
+    <li>Designed UI/UX and performed data cleaning, validation, transformation, and integration to improve data quality and monitoring.</li>
+    <li>Conducted regulatory benchmarking across 5 countries and formulated digital solution recommendations aligned with Bank Indonesia regulations.</li>
+    <li>Supported Payment System Oversight, including field inspections of licensed KUPVA BB (Money Changers).</li>
   </ul>
 </div>
 
@@ -40,7 +40,7 @@ const experiences = [
     </div>
     <ul class="exp-list">
       <li>Strengthened skills in business process analysis and digital solution design.</li>
-      <li>Gained hands-on experience in application development, UI/UX, data management, and system implementation.</li>
+      <li>Gained experience in application development, UI/UX, data management, and system implementation.</li>
       <li>Strengthened skills in data cleaning, validation, transformation, and integration.</li>
     </ul>
   </div>
@@ -51,7 +51,7 @@ const experiences = [
       <span class="exp-block-text">IMPACT</span>
     </div>
     <ul class="exp-list">
-      <li>Developed OVERSYS and SAKSI to support internal business process digitalization, reaching approximately 80% implementation progress.</li>
+      <li>Developed OVERSYS and SAKSI to support internal business process digitalization, with approximately 80% implementation progress.</li>
       <li>Developed DIGIFESTAB3 as a centralized platform for competition management and monitoring.</li>
       <li>Supported data-driven monitoring and regulatory analysis through data management and benchmarking.</li>
     </ul>
