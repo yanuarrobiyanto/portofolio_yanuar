@@ -22,12 +22,11 @@ const experiences = [
   </div>
   <ul class="exp-list">
     <li>Developed 3 applications (OVERSYS, SAKSI, and DIGIFESTAB3) for business process digitalization and activity monitoring.</li>
-    <li>Designed and developed OVERSYS and SAKSI using Microsoft Power Apps and SharePoint, achieving approximately 80% implementation progress.</li>
-    <li>Designed and developed DIGIFESTAB3 using Google Apps Script to centralize competition schedules, results, documentation, and information.</li>
-    <li>Designed UI/UX and performed data cleaning, validation, transformation, and integration to improve data quality and monitoring.</li>
-    <li>Conducted regulatory benchmarking across 5 countries and formulated digital solution recommendations aligned with Bank Indonesia regulations.</li>
-    <li>Supported Payment System Oversight, including field inspections of licensed KUPVA BB (Money Changers).</li>
-  </ul>
+    <li>Built OVERSYS & SAKSI using Power Apps and SharePoint, reaching 80% implementation.</li>
+    <li>Developed DIGIFESTAB3 using Google Apps Script to centralize competition management and monitoring.</li>
+    <li>Designed UI/UX and managed data processing and system integration.</li>
+    <li>Conducted regulatory benchmarking across 5 countries and supported Payment System Oversight.</li>
+    </ul>
 </div>
 
 <div class="exp-divider"></div>
@@ -40,8 +39,8 @@ const experiences = [
     </div>
     <ul class="exp-list">
       <li>Strengthened skills in business process analysis and digital solution design.</li>
-      <li>Gained experience in application development, UI/UX, data management, and system implementation.</li>
-      <li>Strengthened skills in data cleaning, validation, transformation, and integration.</li>
+      <li>Gained hands-on experience in application development and UI/UX.</li>
+      <li>Improved expertise in data management, integration, and system implementation.</li>
     </ul>
   </div>
 
@@ -51,9 +50,9 @@ const experiences = [
       <span class="exp-block-text">IMPACT</span>
     </div>
     <ul class="exp-list">
-      <li>Developed OVERSYS and SAKSI to support internal business process digitalization, with approximately 80% implementation progress.</li>
-      <li>Developed DIGIFESTAB3 as a centralized platform for competition management and monitoring.</li>
-      <li>Supported data-driven monitoring and regulatory analysis through data management and benchmarking.</li>
+      <li>Digitalized internal business processes through OVERSYS and SAKSI.</li>
+      <li>Centralized competition management through DIGIFESTAB3.</li>
+      <li>Supported data-driven monitoring and regulatory analysis.</li>
     </ul>
   </div>
 </div>
