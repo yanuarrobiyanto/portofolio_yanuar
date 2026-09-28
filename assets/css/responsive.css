@@ -24,7 +24,7 @@
   }
 
   .skill-card {
-    min-height: 120px;
+    padding: 18px 8px;
   }
 
   .skill-card img {
@@ -37,7 +37,7 @@
   }
 
   .skill-name {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 
@@ -57,7 +57,17 @@
   }
 
   .logo-btn img {
-    width: 36px;
+    height: 40px;
+    width: auto;
+  }
+
+  .theme-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-actions {
+    gap: 10px;
   }
 
   .menu {
@@ -96,6 +106,8 @@
 
   .hamburger {
     display: grid;
+    width: 40px;
+    height: 40px;
   }
 
   /* ---------- Hero ---------- */
@@ -202,8 +214,8 @@
   }
 
   .skill-card {
-    min-height: 84px;
-    padding: 10px 2px 6px;
+    padding: 12px 4px;
+    gap: 10px;
   }
 
   .skill-card img {
@@ -255,7 +267,8 @@
   }
 
   .exp-meta {
-    flex-wrap: wrap; /* hanya turun baris kalau teksnya memang panjang */
+    flex-wrap: nowrap;
+    white-space: nowrap;
   }
 
   .exp-company-line {

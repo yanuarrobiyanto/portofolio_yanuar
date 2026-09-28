@@ -234,7 +234,7 @@ const experiences = [
     flag: "🇮🇩",
     date: "Aug 2019 - Aug 2019",
     length: "4 Days",
-    type: "National Defense Training Program",
+    type: "Training Program",
     mode: "Onsite",
     desc: `
 <div class="exp-block">
@@ -665,7 +665,35 @@ document.addEventListener("click", (e) => {
    5. INITIAL RENDER
 ===================================================== */
 
+/* Di HP: baris company & durasi Experience selalu 1 baris.
+   Ukuran dasar diatur CSS; kalau ada baris yang terlalu panjang,
+   fontnya dikecilkan sedikit sampai muat. */
+function fitExperienceLines() {
+  const isPhone = window.matchMedia("(max-width: 480px)").matches;
+
+  document.querySelectorAll(".exp-company-line, .exp-meta").forEach(el => {
+    el.style.fontSize = "";
+    if (!isPhone) return;
+
+    let size = parseFloat(getComputedStyle(el).fontSize);
+    while (el.scrollWidth > el.clientWidth + 1 && size > 7.5) {
+      size -= 0.25;
+      el.style.fontSize = size + "px";
+    }
+  });
+}
+
+let fitTimer;
+window.addEventListener("resize", () => {
+  clearTimeout(fitTimer);
+  fitTimer = setTimeout(fitExperienceLines, 120);
+});
+
 renderExperiences();
+fitExperienceLines();
+if (document.fonts && document.fonts.ready) {
+  document.fonts.ready.then(fitExperienceLines);
+}
 renderProjects("all");
 renderCertificates();
 
