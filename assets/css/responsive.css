@@ -28,8 +28,12 @@
   }
 
   .skill-card img {
-    max-width: 46px;
-    max-height: 46px;
+    width: 46px;
+    height: 46px;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .skill-name {
@@ -174,6 +178,10 @@
 ===================================================== */
 @media (max-width: 480px) {
 
+  :root {
+    --exp-fs: 2.8vw;
+  }
+
   section {
     padding: 32px 16px;
   }
@@ -199,17 +207,26 @@
   }
 
   .skill-card img {
-    max-width: 34px;
-    max-height: 34px;
+    width: 34px;
+    height: 34px;
   }
 
   .skill-name {
     font-size: 10px;
   }
 
-  /* Experience */
+  /* Experience header: logo di samping peran, baris company & durasi
+     memakai lebar penuh kartu, tiap baris 1 baris seperti di desktop */
   .exp-header {
-    gap: 12px;
+    display: grid;
+    grid-template-columns: 46px minmax(0, 1fr);
+    column-gap: 12px;
+    row-gap: 8px;
+    align-items: center;
+  }
+
+  .exp-title-area {
+    display: contents;
   }
 
   .exp-logo {
@@ -219,15 +236,38 @@
   }
 
   .exp-role {
-    font-size: 16px;
+    grid-column: 2;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.25;
+  }
+
+  .exp-company-line,
+  .exp-meta {
+    grid-column: 1 / -1;
+    gap: 4px;
+    margin: 0;
   }
 
   .exp-company-line {
-    font-size: 14px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
   }
 
   .exp-meta {
-    font-size: 12.5px;
+    flex-wrap: wrap; /* hanya turun baris kalau teksnya memang panjang */
+  }
+
+  .exp-company-line {
+    font-size: var(--exp-fs, 11px);
+  }
+
+  .exp-meta {
+    font-size: var(--exp-fs, 11px);
+  }
+
+  .exp-company-line .flag {
+    font-size: inherit;
   }
 
   /* Dua kolom tetap dipakai di HP, jadi teks & jarak dikecilkan supaya muat */
@@ -277,6 +317,7 @@
   }
 
   .project-grid {
+    grid-template-columns: 1fr;
     gap: 20px;
   }
 
@@ -314,5 +355,23 @@
 @media (hover: none) {
   #cursorCanvas {
     display: none;
+  }
+}
+
+
+/* =====================================================
+   4. HERO DI PERANGKAT SENTUH: tanpa efek hover 3D
+   (di HP, tap membuat foto miring dan muncul kotak bayangan)
+===================================================== */
+@media (hover: none) {
+  .card-hero:hover .wrapper-hero {
+    transform: none;
+    box-shadow: var(--shadow-soft);
+    border-color: var(--border);
+  }
+
+  .card-hero:hover .character-hero {
+    opacity: 0;
+    transform: translate3d(0, 25px, 0);
   }
 }

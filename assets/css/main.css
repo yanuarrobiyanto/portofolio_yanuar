@@ -772,10 +772,8 @@ body.dark .project-filters button:hover {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 30px;
-  max-width: 1100px;
-  margin: 0 auto;
   align-items: stretch;
 }
 
@@ -1034,8 +1032,9 @@ body.dark .project-desc {
 }
 
 .skill-card img {
-  max-width: 38px;
-  max-height: 38px;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
   object-fit: contain;
 }
 
