@@ -574,34 +574,15 @@ html { scroll-padding-top: 44px; }              /* judul section tidak menempel 
 }
 
 
-/* ===== HEADER: nempel di atas, blur transparan, tidak tembus ===== */
+/* ===== HEADER: sama seperti versi referensi (nempel & stay di atas) ===== */
 header {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
   width: 100%;
-  z-index: 1000;
-  padding-top: env(safe-area-inset-top, 0px);
-  transform: none;
-  will-change: auto;
-  background: transparent;
-  border-bottom: none;
-  -webkit-backdrop-filter: none;
-  backdrop-filter: none;
-}
-
-header::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: -100vh; /* menutup area di atas header, jadi tidak ada celah tembus */
   background: var(--nav-bg);
   border-bottom: 1px solid var(--border);
-  -webkit-backdrop-filter: blur(22px) saturate(180%);
-  backdrop-filter: blur(22px) saturate(180%);
-  pointer-events: none;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  z-index: 1000;
 }
