@@ -104,7 +104,7 @@ header {
   -webkit-backdrop-filter: blur(16px) saturate(160%);
   z-index: 1000;
 }
-.nav { margin: 0 auto; padding: 12px 24px; max-width: 1200px; display: flex; align-items: center; justify-content: space-between; }
+.nav { margin: 0 auto; padding: 12px 32px; display: flex; align-items: center; justify-content: space-between; }
 .logo { display: flex; align-items: center; flex-shrink: 0; }
 .logo-btn { background: none; border: none; padding: 0; cursor: pointer; display: flex; align-items: center; }
 .logo-btn img { height: 42px; width: auto; display: block; }
@@ -519,3 +519,56 @@ footer p::before { content: ""; display: block; width: 48px; height: 1px; margin
 /* anti geser ke samping di HP (iOS Safari) */
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; overflow-x: clip; }
 body { max-width: 100%; overflow-x: clip; }
+
+/* =====================================================
+   NAVBAR: dikembalikan seperti desain awal
+===================================================== */
+.nav { max-width: none; padding: 14px 20px; }
+.menu { gap: 24px; border-radius: 999px; }
+.menu a {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px; font-weight: 500; line-height: 1;
+  letter-spacing: normal; text-transform: none;
+  padding: 6px 0; border-radius: 0;
+  color: var(--text); background: transparent;
+}
+.menu a:hover { background: transparent; color: var(--gold); }
+body.dark .menu a { opacity: 0.85; }
+body.dark .menu a:hover { opacity: 1; }
+
+.theme-btn { border: 1px solid var(--border); background: rgba(255, 255, 255, 0.65); color: var(--text); }
+.theme-btn:hover { transform: translateY(-2px); background: rgba(255, 255, 255, 0.35); }
+body.dark .theme-btn { border: 2px solid rgba(255, 255, 255, 0.7); background: rgba(0, 0, 0, 0.25); color: #ffffff; }
+
+/* nav: logo & tombol tema di ujung kiri-kanan, menu tepat di tengah */
+.nav { max-width: none; width: 100%; }
+.logo { flex: 1; }
+.nav-actions { flex: 1; justify-content: flex-end; margin-left: 0; }
+
+/* ===== About: rapi & proporsional ===== */
+html { scroll-padding-top: 44px; }              /* judul section tidak menempel ke navbar */
+.about { grid-template-columns: 340px 1fr; gap: 56px; align-items: center; padding: 40px 48px; }
+.about img {
+  width: 100%; height: 440px; object-fit: cover; object-position: center top;
+  border-radius: 170px 170px 20px 20px;
+  border: 1px solid rgba(212, 175, 106, 0.35);
+}
+.description { text-align: left; line-height: 1.95; font-size: 15.5px; max-width: 68ch; }
+.description b { font-weight: 600; }
+@media (max-width: 1000px) { .about { grid-template-columns: 280px 1fr; gap: 36px; padding: 32px; } .about img { height: 380px; border-radius: 140px 140px 18px 18px; } }
+
+/* ===== About: saat diklik menu, konten pas di tengah 1 layar (desktop & laptop) ===== */
+:root { --nav-h: 71px; }   /* nilai asli diukur otomatis oleh main.js */
+@media (min-width: 769px) {
+  #about {
+    min-height: calc(100vh - var(--nav-h));
+    min-height: calc(100svh - var(--nav-h));
+    scroll-margin-top: calc(var(--nav-h) - 44px);   /* dikurangi scroll-padding html (44px) */
+    display: flex; flex-direction: column; justify-content: center;
+    padding-top: 16px; padding-bottom: 16px;
+  }
+  #about h2 { font-size: clamp(30px, 4.4vw, 42px); margin-bottom: 22px; padding-bottom: 12px; }
+  #about .about { padding: 26px 40px; gap: 44px; }
+  #about .about img { height: clamp(240px, 46vh, 420px); }
+  #about .description { font-size: clamp(13.5px, 1.05vw, 15.5px); line-height: 1.85; }
+}

@@ -887,3 +887,16 @@ profileImages.forEach(img => {
     io.observe(el);
   });
 })();
+
+
+/* =====================================================
+   9. UKUR TINGGI NAVBAR (untuk posisi tengah section About)
+===================================================== */
+(function () {
+  const header = document.querySelector("header");
+  const setNavH = () => document.documentElement.style.setProperty("--nav-h", header.offsetHeight + "px");
+  setNavH();
+  window.addEventListener("resize", setNavH);
+  window.addEventListener("load", setNavH);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(setNavH);
+})();
