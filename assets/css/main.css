@@ -73,7 +73,11 @@ body {
 body::before {
   content: "";
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120vh;                 /* fallback */
+  height: calc(100lvh + 120px);  /* iOS Safari: sampai ke bawah toolbar, tidak ada pita putih */
   z-index: -1;
   pointer-events: none;
   background-image: var(--bg-gradient);
@@ -996,20 +1000,21 @@ body.dark .project-desc {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(10, 1fr); /* 20 skill = 2 baris x 10, pas selebar konten */
+  grid-template-columns: repeat(10, minmax(0, 1fr)); /* 20 skill = 2 baris x 10, pas selebar konten */
+  grid-auto-rows: 1fr;   /* semua baris sama tinggi */
   gap: 24px;
 }
 
 .skill-card {
   width: 100%;
-  aspect-ratio: 1 / 1;
-  padding: 8px 4px;
+  min-height: 96px;
+  padding: 14px 4px 8px;
   border-radius: 16px;
   background: rgba(255,255,255,0.7);
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* ikon sejajar walau teks 1-3 baris */
   align-items: center;
   gap: 4px;
 
@@ -1132,7 +1137,7 @@ body.dark .skill-name {
 
 /* ========== FOOTER ========== */
 footer {
-  padding: 30px;
+  padding: 30px 30px calc(30px + env(safe-area-inset-bottom, 0px));
   text-align: center;
 
   background: rgba(255, 255, 255, 0.75);
