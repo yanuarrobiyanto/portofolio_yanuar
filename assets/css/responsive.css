@@ -6,6 +6,35 @@
 
 
 /* =====================================================
+   0. LAPTOP KECIL & TABLET LANDSCAPE (<= 1199px)
+===================================================== */
+@media (max-width: 1199px) {
+  .skills-grid {
+    gap: 16px;
+  }
+}
+
+
+/* =====================================================
+   0b. TABLET (<= 899px) - skills jadi 5 kolom x 4 baris
+===================================================== */
+@media (max-width: 899px) {
+  .skills-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .skill-card img {
+    max-width: 46px;
+    max-height: 46px;
+  }
+
+  .skill-name {
+    font-size: 11px;
+  }
+}
+
+
+/* =====================================================
    1. TABLET & MOBILE BESAR (<= 768px)
 ===================================================== */
 @media (max-width: 768px) {
@@ -105,13 +134,8 @@
   }
 
   .description {
-    text-align: left; /* justify di layar sempit bikin spasi kata bolong */
-  }
-
-  /* ---------- Skills ---------- */
-  .skills-grid {
-    --skill: 80px;
-    gap: 18px;
+    text-align: justify; /* tetap rata kiri-kanan di HP */
+    text-justify: inter-word;
   }
 
   /* ---------- Experience ---------- */
@@ -159,9 +183,9 @@
     margin-bottom: 24px;
   }
 
-  /* Skills */
+  /* Skills: 4 kolom x 5 baris, tepi kiri & kanan sejajar dengan section lain */
   .skills-grid {
-    --skill: 68px;
+    grid-template-columns: repeat(4, 1fr);
     gap: 12px;
   }
 

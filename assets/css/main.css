@@ -995,16 +995,14 @@ body.dark .project-desc {
 /* ========== SKILLS ========== */
 
 .skills-grid {
-  --skill: 90px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, var(--skill));
-  justify-content: center;
+  grid-template-columns: repeat(10, 1fr); /* 20 skill = 2 baris x 10, pas selebar konten */
   gap: 24px;
 }
 
 .skill-card {
-  width: var(--skill);
-  min-height: var(--skill);
+  width: 100%;
+  aspect-ratio: 1 / 1;
   padding: 8px 4px;
   border-radius: 16px;
   background: rgba(255,255,255,0.7);
