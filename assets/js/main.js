@@ -569,6 +569,11 @@ function renderProjects(filter = "all") {
       ? projects
       : projects.filter(p => p.category === filter);
 
+  if (filteredProjects.length === 0) {
+    projectGrid.innerHTML = `<p class="project-empty">Projects for this category are coming soon.</p>`;
+    return;
+  }
+
   filteredProjects.forEach(project => {
     const card = document.createElement("div");
     card.className = "project-card";
@@ -697,6 +702,7 @@ function resizeCanvas() {
   canvas.height = rect.height * dpr;
 
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.globalCompositeOperation = "lighter"; // ikut ke-reset saat canvas di-resize
 }
 
 resizeCanvas();
