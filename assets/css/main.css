@@ -517,8 +517,8 @@ footer p::before { content: ""; display: block; width: 48px; height: 1px; margin
 ::selection { background: var(--primary); color: var(--on-gold); }
 
 /* anti geser ke samping di HP (iOS Safari) */
-html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; overflow-x: clip; }
-body { max-width: 100%; overflow-x: clip; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { overflow-x: hidden; }   /* sama seperti versi awal; "clip" bikin header fixed bergeser di iOS Safari */
 
 /* =====================================================
    NAVBAR: dikembalikan seperti desain awal
@@ -571,4 +571,13 @@ html { scroll-padding-top: 44px; }              /* judul section tidak menempel 
   #about .about { padding: 26px 40px; gap: 44px; }
   #about .about img { height: clamp(240px, 46vh, 420px); }
   #about .description { font-size: clamp(13.5px, 1.05vw, 15.5px); line-height: 1.85; }
+}
+
+
+/* ===== Navbar selalu menempel di paling atas layar (iPhone Safari & Android) ===== */
+header {
+  position: fixed; top: 0; left: 0; right: 0; width: 100%;
+  padding-top: env(safe-area-inset-top, 0px);
+  -webkit-transform: translateZ(0); transform: translateZ(0);   /* jadikan layer sendiri, anti bergeser saat scroll */
+  will-change: transform;
 }
