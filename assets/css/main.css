@@ -586,3 +586,12 @@ header {
   -webkit-backdrop-filter: blur(16px);
   z-index: 1000;
 }
+
+
+/* ===== HP: matikan lapisan grain fullscreen =====
+   Lapisan fixed "inset: 0" di atas header (body::after) bikin iOS Safari
+   salah menghitung posisi fixed header, sehingga header ikut turun.
+   Versi lama tidak punya lapisan ini. */
+@media (max-width: 768px), (hover: none) {
+  body::after { display: none; }
+}
