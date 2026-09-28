@@ -640,6 +640,9 @@ function closeCertModal() {
 
 function filterProjects(category) {
   renderProjects(category);
+  document.querySelectorAll(".project-filters button").forEach(b => {
+    b.classList.toggle("active", b.getAttribute("onclick").includes("'" + category + "'"));
+  });
 }
 
 function toggleMenu() {
@@ -704,14 +707,20 @@ renderCertificates();
 const themeToggle = document.getElementById("themeToggle");
 
 if (themeToggle) {
-  themeToggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
+  const applyTheme = (dark) => {
+    document.body.classList.toggle("dark", dark);
+    themeToggle.textContent = dark ? "☀️" : "🌙";
+    document.querySelector('meta[name="theme-color"]')?.setAttribute("content", dark ? "#0A0A0C" : "#FAF7F2");
+  };
 
-    if (document.body.classList.contains("dark")) {
-      themeToggle.textContent = "☀️";
-    } else {
-      themeToggle.textContent = "🌙";
-    }
+  let saved = null;
+  try { saved = localStorage.getItem("theme"); } catch (e) {}
+  applyTheme(saved ? saved === "dark" : true);
+
+  themeToggle.addEventListener("click", () => {
+    const dark = !document.body.classList.contains("dark");
+    applyTheme(dark);
+    try { localStorage.setItem("theme", dark ? "dark" : "light"); } catch (e) {}
   });
 }
 
@@ -754,9 +763,9 @@ function createParticle(x, y) {
     size: initialSize,
     initialSize: initialSize,
 
-    hue: 190 + Math.random() * 60,
-    saturation: 90,
-    lightness: 65,
+    hue: 38 + Math.random() * 14,  /* emas champagne */
+    saturation: 70,
+    lightness: 62,
 
     glow: true
   };
@@ -861,3 +870,20 @@ profileImages.forEach(img => {
     canvas.style.opacity = "1";
   });
 });
+
+/* =====================================================
+   8. SCROLL REVEAL
+===================================================== */
+(function () {
+  if (!("IntersectionObserver" in window)) return;
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(en => {
+      if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll("section:not(.hero) > *").forEach(el => {
+    el.classList.add("reveal");
+    io.observe(el);
+  });
+})();

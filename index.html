@@ -4,12 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Yanuar Cahya Robiyanto | Portfolio</title>
-  <meta name="theme-color" content="#F7F7F5"/>
+  <meta name="theme-color" content="#0A0A0C"/>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/css/main.css?v=4">
-  <link rel="stylesheet" href="assets/css/responsive.css?v=4">
+  <link rel="stylesheet" href="assets/css/main.css?v=8">
+  <link rel="stylesheet" href="assets/css/responsive.css?v=8">
 </head>
 
 <body>
@@ -35,7 +37,7 @@
       </nav>
 
       <div class="nav-actions">
-        <button id="themeToggle" class="theme-btn">🌙</button>
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
         <div class="hamburger" onclick="toggleMenu()">☰</div>
       </div>
 
@@ -234,7 +236,7 @@
     <h2>Project Portfolio</h2>
 
     <div class="project-filters">
-      <button onclick="filterProjects('all')">All</button>
+      <button class="active" onclick="filterProjects('all')">All</button>
       <button onclick="filterProjects('bi')">Business Intelligence</button>
       <button onclick="filterProjects('ui/ux')">UI/UX</button>
       <button onclick="filterProjects('ba')">Business Analyst</button>
@@ -299,6 +301,6 @@
     <p>© 2026 Yanuar Robiyanto</p>
   </footer>
 
-  <script src="assets/js/main.js?v=4"></script>
+  <script src="assets/js/main.js?v=8"></script>
 </body>
 </html>
