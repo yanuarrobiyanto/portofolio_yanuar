@@ -189,10 +189,9 @@ header {
   width: 42px;
   height: 42px;
   place-items: center;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.65);
-  font-size: 20px;
+  border: none;
+  background: transparent;
+  font-size: 28px;
   line-height: 1;
   cursor: pointer;
   color: var(--text);
@@ -1169,10 +1168,15 @@ body.dark h2 {
 }
 
 /* Theme button */
-body.dark .theme-btn,
-body.dark .hamburger {
+body.dark .theme-btn {
   border: 2px solid rgba(255, 255, 255, 0.7);
   background: rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+
+body.dark .hamburger {
+  border: none;
+  background: transparent;
   color: #ffffff;
 }
 
