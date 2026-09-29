@@ -403,3 +403,25 @@
 @media (max-width: 480px) {
   h2 { font-size: 28px; } /* font serif tampak lebih kecil, jadi sedikit dinaikkan */
 }
+
+
+/* =====================================================
+   6. TOMBOL TEMA DI PERANGKAT SENTUH: matikan efek hover
+   (hover "nyangkut" setelah tap, tombol jadi naik & miring
+   sampai user tap elemen lain, misalnya hamburger)
+===================================================== */
+@media (hover: none) {
+  .theme-btn:hover {
+    transform: none;
+    border-color: var(--border);
+  }
+
+  body:not(.dark) .theme-btn:hover {
+    background: rgba(255, 255, 255, 0.65);
+  }
+
+  .theme-btn,
+  .hamburger {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
