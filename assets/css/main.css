@@ -567,9 +567,9 @@ html { scroll-padding-top: 44px; }              /* judul section tidak menempel 
     display: flex; flex-direction: column; justify-content: center;
     padding-top: 16px; padding-bottom: 16px;
   }
-  #about h2 { font-size: clamp(30px, 4.4vw, 42px); margin-bottom: 22px; padding-bottom: 12px; }
+  #about h2 { margin-bottom: 44px; padding-bottom: 16px; }   /* ukuran & jarak dibuat sama seperti judul section lain */
   #about .about { padding: 26px 40px; gap: 44px; }
-  #about .about img { height: clamp(240px, 46vh, 420px); }
+  #about .about img { height: clamp(220px, 40vh, 380px); }   /* sedikit dikecilkan supaya tetap muat 1 layar */
   #about .description { font-size: clamp(13.5px, 1.05vw, 15.5px); line-height: 1.85; }
 }
 
