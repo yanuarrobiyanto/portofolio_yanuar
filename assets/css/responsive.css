@@ -67,48 +67,54 @@
   }
 
   .nav-actions {
-    gap: 10px;
+    gap: 8px; /* jarak tombol tema & hamburger dibuat rapat */
   }
 
+  /* Menu desktop disembunyikan di HP; diganti sidebar (bagian 7 di bawah) */
   .menu {
-    display: none;
-    flex-direction: column;
-    gap: 2px;
-    position: absolute;
-    top: calc(100% + 8px);
-    right: 16px;
-    min-width: 190px;
-    padding: 10px;
+    display: none !important;
   }
 
-  .menu.show {
-    display: flex;
-    background: var(--card);
-    border: 1px solid var(--border);
-    box-shadow: var(--shadow);
-    border-radius: 18px;
-    backdrop-filter: blur(14px);
-  }
-
-  .menu a {
-    padding: 10px 14px;
-    border-radius: 10px;
-  }
-
-  .menu.show a {
-    font-weight: 500;
-    color: var(--text);
-  }
-
-  .menu.show a:hover {
-    color: var(--gold);
-  }
-
+  /* Hamburger: bulat, ukuran & gaya sama dengan tombol tema */
   .hamburger {
     display: grid;
+    place-items: center;
+    position: relative;
     width: 40px;
     height: 40px;
+    padding: 0;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.65);
+    color: var(--text);
+    -webkit-tap-highlight-color: transparent;
   }
+
+  body.dark .hamburger {
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    background: rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+  }
+
+  .hamburger span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 18px;
+    height: 2px;
+    margin-left: -9px;
+    margin-top: -1px;
+    border-radius: 2px;
+    background: currentColor;
+    transition: transform 0.3s ease, opacity 0.2s ease;
+  }
+
+  .hamburger span:nth-child(1) { transform: translateY(-6px); }
+  .hamburger span:nth-child(3) { transform: translateY(6px); }
+
+  body.menu-open .hamburger span:nth-child(1) { transform: rotate(45deg); }
+  body.menu-open .hamburger span:nth-child(2) { opacity: 0; }
+  body.menu-open .hamburger span:nth-child(3) { transform: rotate(-45deg); }
 
   /* ---------- Hero ---------- */
   .hero {
@@ -422,6 +428,218 @@
 
   .theme-btn,
   .hamburger {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+
+/* =====================================================
+   7. SIDEBAR MENU MODERN (HP saja)
+   Elemen sidebar disembunyikan di desktop / laptop.
+===================================================== */
+.drawer,
+.drawer-overlay {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .drawer-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 1100;
+    background: rgba(0, 0, 0, 0.55);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    opacity: 0;
+    visibility: hidden;
+    touch-action: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .drawer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: min(310px, 84vw);
+    z-index: 1101;
+    padding: calc(18px + env(safe-area-inset-top, 0px)) 18px calc(20px + env(safe-area-inset-bottom, 0px));
+    background: var(--card);
+    border-left: 1px solid var(--border);
+    border-radius: 28px 0 0 28px;
+    box-shadow: -24px 0 60px -20px rgba(0, 0, 0, 0.55);
+    overflow-y: auto;
+    transform: translateX(105%);
+    visibility: hidden;
+    transition: transform 0.38s cubic-bezier(0.22, 0.8, 0.24, 1), visibility 0.38s;
+  }
+
+  body.menu-open .drawer-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  body.menu-open .drawer {
+    transform: none;
+    visibility: visible;
+  }
+
+  /* ---------- Kepala sidebar ---------- */
+  .drawer-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .drawer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+  }
+
+  .drawer-brand img {
+    height: 40px;
+    width: auto;
+    flex-shrink: 0;
+  }
+
+  .drawer-brand-text {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    line-height: 1.25;
+  }
+
+  .drawer-brand-text strong {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    white-space: nowrap;
+  }
+
+  .drawer-brand-text small {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--primary);
+  }
+
+  .drawer-close {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--chip);
+    color: var(--text);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .drawer-close svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+  }
+
+  /* ---------- Daftar menu ---------- */
+  .drawer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 18px;
+  }
+
+  .drawer-links a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 9px 10px;
+    border-radius: 16px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15.5px;
+    font-weight: 500;
+    color: var(--text);
+    -webkit-tap-highlight-color: transparent;
+    opacity: 0;
+    transform: translateX(18px);
+    transition: opacity 0.35s ease, transform 0.35s ease, background 0.2s ease;
+  }
+
+  .drawer-links a::after {
+    content: "\203A";
+    margin-left: auto;
+    font-size: 22px;
+    line-height: 1;
+    color: var(--muted);
+  }
+
+  .drawer-links a:active {
+    background: var(--chip);
+  }
+
+  .d-ico {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: var(--chip);
+    color: var(--primary);
+  }
+
+  .d-ico svg {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  /* muncul berurutan saat sidebar dibuka */
+  body.menu-open .drawer-links a {
+    opacity: 1;
+    transform: none;
+  }
+
+  body.menu-open .drawer-links a:nth-child(1) { transition-delay: 0.10s, 0.10s, 0s; }
+  body.menu-open .drawer-links a:nth-child(2) { transition-delay: 0.15s, 0.15s, 0s; }
+  body.menu-open .drawer-links a:nth-child(3) { transition-delay: 0.20s, 0.20s, 0s; }
+  body.menu-open .drawer-links a:nth-child(4) { transition-delay: 0.25s, 0.25s, 0s; }
+  body.menu-open .drawer-links a:nth-child(5) { transition-delay: 0.30s, 0.30s, 0s; }
+  body.menu-open .drawer-links a:nth-child(6) { transition-delay: 0.35s, 0.35s, 0s; }
+
+  /* ---------- Tombol bawah ---------- */
+  .drawer-cta {
+    margin-top: auto;
+    padding: 14px 18px;
+    border-radius: 999px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--on-gold);
+    background: var(--grad);
+    box-shadow: var(--shadow-soft);
     -webkit-tap-highlight-color: transparent;
   }
 }

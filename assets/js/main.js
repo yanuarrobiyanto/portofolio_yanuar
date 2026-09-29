@@ -645,23 +645,35 @@ function filterProjects(category) {
   });
 }
 
-function toggleMenu() {
-  menu.classList.toggle("show");
+/* Sidebar menu (HP): buka / tutup lewat class "menu-open" di <body> */
+function setMenu(open) {
+  document.body.classList.toggle("menu-open", open);
+
+  const hb = document.querySelector(".hamburger");
+  if (hb) {
+    hb.setAttribute("aria-expanded", open ? "true" : "false");
+    hb.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  }
+
+  const drawer = document.getElementById("drawer");
+  if (drawer) drawer.setAttribute("aria-hidden", open ? "false" : "true");
 }
 
-document.querySelectorAll(".menu a").forEach(link => {
-  link.addEventListener("click", () => {
-    menu.classList.remove("show");
-  });
+function toggleMenu() {
+  setMenu(!document.body.classList.contains("menu-open"));
+}
+
+/* tutup saat link / tombol close / area gelap di luar sidebar di-tap */
+document.querySelectorAll(".drawer-links a, .drawer-cta, .drawer-close, #drawerOverlay")
+  .forEach(el => el.addEventListener("click", () => setMenu(false)));
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") setMenu(false);
 });
 
-document.addEventListener("click", (e) => {
-  const isClickInsideMenu = menu.contains(e.target);
-  const isHamburger = e.target.classList.contains("hamburger");
-
-  if (!isClickInsideMenu && !isHamburger) {
-    menu.classList.remove("show");
-  }
+/* kalau layar dibesarkan / diputar ke lebar desktop, pastikan sidebar tertutup */
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768) setMenu(false);
 });
 
 /* =====================================================
