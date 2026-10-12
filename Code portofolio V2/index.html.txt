@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Yanuar Cahya Robiyanto | Portfolio</title>
+  <meta name="theme-color" content="#0A0A0C"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/main.css?v=9">
+  <link rel="stylesheet" href="assets/css/responsive.css?v=9">
+</head>
+
+<body>
+  <canvas id="cursorCanvas"></canvas>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav">
+
+      <div class="logo">
+        <a href="#home" class="logo-btn">
+          <img src="assets/icons/yr.png" alt="Logo">
+        </a>
+      </div>
+
+      <nav class="menu" id="menu">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+
+      <div class="hero-image hero-3d">
+
+  <div class="card-hero">
+    <div class="wrapper-hero">
+      <img src="assets/images/profile/fotoo.jpeg" class="cover-image-hero" alt="Profile Photo">
+    </div>
+
+    <img src="assets/images/profile/fotoobg.png" class="character-hero" alt="Profile No BG">
+  </div>
+
+  <span class="badge">Business Intelligence</span>
+</div>
+
+
+      <div class="hero-text">
+        <p class="small-text">Hello there, I'm</p>
+        <h1>Yanuar Cahya <br>Robiyanto, S.Kom.</h1>
+
+        <p class="subtitle">
+        An Information Systems graduate passionate about business, data, and building impactful digital solutions.  
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="assets/cv/CV ATS Yanuar Cahya Robiyanto.pdf" download class="button">
+            <span class="button__text">Download</span>
+            <span class="button__icon">
+              <svg class="svg" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path>
+                <path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path>
+                <path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path>
+              </svg>
+            </span>
+          </a>
+
+          <a href="https://wa.me/6282265052003" target="_blank" class="btn-contact">
+            Contact Me
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+
+    <div class="about">
+      <img src="assets/images/profile/foto1.png" alt="Profile Photo">
+
+      <p class="description">
+          An <b>Information Systems graduate from Bina Nusantara University</b>, specializing in 
+          <b>Business Intelligence</b>, with <b>over 1 year of IT internship experience</b>. 
+          Experienced in <b>business and system analysis</b>, <b>SQL-based data analysis</b>, 
+          <b>data transformation</b>, <b>requirements gathering</b>, <b>process modeling</b>, 
+          <b>UI/UX</b>, <b>application testing</b>, and <b>technical documentation</b>. 
+          Skilled at <b>analyzing data and business processes</b>, 
+          <b>translating business needs into structured digital solutions</b>, 
+          <b>identifying improvement opportunities</b>, and collaborating with 
+          <b>cross-functional teams throughout the SDLC</b>. Experienced in supporting 
+          <b>digital transformation and continuous process improvement</b> through structured analysis 
+          and technology-driven solutions. Bringing strong <b>analytical thinking</b>, 
+          <b>problem-solving</b>, and <b>business-technology understanding</b> to deliver effective, 
+          data-driven digital solutions and support <b>business process improvement</b>.
+        </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Technical Skills </h2>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <img src="assets/images/skills/ssms.png" alt="SQL Server Management Studio">
+        <span class="skill-name">SQL Server <br> Management Studio</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/vp.png" alt="Visual Paradigm">
+        <span class="skill-name">Visual Paradigm</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/vs22.png" alt="Visual Studio 2022">
+        <span class="skill-name">Visual Studio <br> 2022</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/tableau.png" alt="Tableau">
+        <span class="skill-name">Tableau</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/excel.png" alt="Excel">
+        <span class="skill-name">Excel</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/word.png" alt="Microsoft Word">
+        <span class="skill-name">Word</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/figma.png" alt="Figma">
+        <span class="skill-name">Figma</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/miro.png" alt="Miro">
+        <span class="skill-name">Miro</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/drawio.png" alt="Draw.io">
+        <span class="skill-name">Draw.io</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/DBeaver.png" alt="DBeaver">
+        <span class="skill-name">DBeaver</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/toad.png" alt="TOAD">
+        <span class="skill-name">TOAD</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/mysql.png" alt="MySQL">
+        <span class="skill-name">MySQL</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/vscode.png" alt="Visual Studio Code">
+        <span class="skill-name">Visual Studio Code</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/eclipse.png" alt="Eclipse">
+        <span class="skill-name">Eclipse</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/xampp.png" alt="XAMPP">
+        <span class="skill-name">XAMPP</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/java.png" alt="Java">
+        <span class="skill-name">Java</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/powerapps.jpg" alt="Power Apps">
+        <span class="skill-name">Power Apps</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/sharepoint.png" alt="SharePoint">
+        <span class="skill-name">SharePoint</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/appscript.png" alt="Google Apps Script">
+        <span class="skill-name">Google Apps Script</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/images/skills/powerbi.png" alt="Power BI">
+        <span class="skill-name">Power BI</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience-list" id="experienceList"></div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Project Portfolio</h2>
+
+    <div class="project-filters">
+      <button class="active" onclick="filterProjects('all')">All</button>
+      <button onclick="filterProjects('bi')">Business Intelligence</button>
+      <button onclick="filterProjects('ui/ux')">UI/UX</button>
+      <button onclick="filterProjects('ba')">Business Analyst</button>
+      <button onclick="filterProjects('DB')">Data Warehouse</button>
+    </div>
+
+    <div class="project-grid" id="projectGrid"></div>
+  </section>
+
+  <!-- CERTIFICATE MODAL -->
+  <div class="cert-modal" id="certModal" onclick="closeCertModal()">
+    <div class="cert-modal-content" onclick="event.stopPropagation()">
+      <img id="certModalImage" src="" alt="Certificate Preview">
+    </div>
+  </div>
+
+  <!-- CERTIFICATES -->
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <div class="cert-grid" id="certGrid"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="contact-btns">
+
+      <a href="https://linkedin.com/in/yanuar-cahya-robiyanto" target="_blank" class="Btn linkedin">
+        <svg class="svgIcon" viewBox="0 0 448 512" height="1.5em" xmlns="http://www.w3.org/2000/svg">
+          <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+        </svg>
+        <span class="text">LinkedIn</span>
+      </a>
+
+<a href="mailto:yanuar.robiyanto22@email.com" class="Btn gmail">
+  <svg class="svgIcon" viewBox="0 0 24 24" height="1.5em" xmlns="http://www.w3.org/2000/svg">
+    <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"></path>
+  </svg>
+  <span class="text">Gmail</span>
+</a>
+
+      <a href="https://instagram.com/ynrrobi" target="_blank" class="Btn instagram">
+        <svg class="svgIcon" viewBox="0 0 448 512" height="1.5em" xmlns="http://www.w3.org/2000/svg">
+          <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6-7.8 34.7-22.9 42.6-42.6 11.7-29.5 9-99.5 9-132.1s-2.6-102.7 9-132.1z"></path>
+        </svg>
+        <span class="text">Instagram</span>
+      </a>
+
+<a href="mailto:yanuar.robiyanto@binus.ac.id" class="Btn outlook">
+  <svg class="svgIcon" viewBox="0 0 24 24" height="1.5em" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.88 12.04q0 .45-.11.87-.1.41-.33.74-.22.33-.58.52-.37.2-.87.2t-.85-.2q-.35-.21-.57-.55-.22-.33-.33-.75-.1-.42-.1-.86t.1-.87q.1-.43.34-.76.22-.34.59-.54.36-.2.87-.2t.86.2q.35.21.57.55.22.34.31.77.1.43.1.88zM24 12v9.38q0 .46-.33.8-.33.32-.8.32H7.13q-.46 0-.8-.33-.32-.33-.32-.8V18H1q-.41 0-.7-.3-.3-.29-.3-.7V7q0-.41.3-.7Q.58 6 1 6h6.5V2.55q0-.44.3-.75.3-.3.75-.3h12.9q.44 0 .75.3.3.3.3.75v8.3l1.24.72h.01q.1.07.18.18.07.12.07.25zm-6-8.25v3h3v-3zm0 4.5v3h3v-3zm0 4.5v1.83l3.05-1.83zm-5.25-9v3h3.75v-3zm0 4.5v3h3.75v-3zm0 4.5v2.03l2.41 1.5 1.34-.8v-2.73zM9 3.75V6h2l.13.01.12.04v-2.3zM5.98 15.98q.9 0 1.6-.3.7-.32 1.19-.86.48-.55.73-1.28.25-.74.25-1.61 0-.83-.25-1.55-.24-.71-.71-1.24t-1.15-.83q-.68-.3-1.55-.3-.92 0-1.64.3-.71.3-1.2.85-.5.54-.75 1.3-.25.74-.25 1.63 0 .85.26 1.56.26.72.74 1.23.48.52 1.17.81.69.3 1.56.3zM7.5 21h12.39L12 16.08V17q0 .41-.3.7-.29.3-.7.3H7.5zm15-.13v-7.24l-5.9 3.54Z"></path>
+  </svg>
+  <span class="text">Outlook</span>
+</a>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Yanuar Robiyanto</p>
+  </footer>
+
+  <script src="assets/js/main.js?v=9"></script>
+</body>
+</html>

@@ -426,10 +426,15 @@ const projects = [
 
 /* Certificates */
 const certificates = [
-   {
+    {
+  image: "assets/images/certificates/bi.png",
+  name: "Digital Transformation Analyst Internship Certificate",
+  desc: "Supported digital transformation through system development, data analysis, and business process optimization."
+},
+{
   image: "assets/images/certificates/muf.png",
   name: "Technical Writer Internship Certificate",
-  desc: "Completed a technical writing internship focused on system documentation and analysis."
+  desc: "Developed technical documentation, analyzed system requirements, and translated complex information into clear, structured documentation."
 },
 {
   image: "assets/images/certificates/morphit.png",

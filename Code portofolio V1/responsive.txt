@@ -1,0 +1,390 @@
+/* =====================================================
+   RESPONSIVE
+   Urutan penting: dari besar -> kecil (768 dulu, baru 480),
+   supaya aturan layar kecil tidak tertimpa aturan layar besar.
+===================================================== */
+
+
+/* =====================================================
+   0. LAPTOP KECIL & TABLET LANDSCAPE (<= 1199px)
+===================================================== */
+@media (max-width: 1199px) {
+  .skills-grid {
+    gap: 16px;
+  }
+}
+
+
+/* =====================================================
+   0b. TABLET (<= 899px) - skills jadi 5 kolom x 4 baris
+===================================================== */
+@media (max-width: 899px) {
+  .skills-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .skill-card {
+    padding: 18px 8px;
+  }
+
+  .skill-card img {
+    width: 46px;
+    height: 46px;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .skill-name {
+    font-size: 12px;
+  }
+}
+
+
+/* =====================================================
+   1. TABLET & MOBILE BESAR (<= 768px)
+===================================================== */
+@media (max-width: 768px) {
+
+  section {
+    padding: 44px 20px;
+  }
+
+  /* ---------- Header / Navigation ---------- */
+  .nav {
+    padding: 8px 16px;
+  }
+
+  .logo-btn img {
+    height: 40px;
+    width: auto;
+  }
+
+  .theme-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-actions {
+    gap: 10px;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 2px;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 16px;
+    min-width: 190px;
+    padding: 10px;
+  }
+
+  .menu.show {
+    display: flex;
+    background: var(--card);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    border-radius: 18px;
+    backdrop-filter: blur(14px);
+  }
+
+  .menu a {
+    padding: 10px 14px;
+    border-radius: 10px;
+  }
+
+  .menu.show a {
+    font-weight: 500;
+    color: var(--text);
+  }
+
+  .menu.show a:hover {
+    color: var(--gold);
+  }
+
+  .hamburger {
+    display: grid;
+    width: 40px;
+    height: 40px;
+  }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    padding: 100px 20px 40px;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin: 0 auto;
+  }
+
+  .hero-3d {
+    width: 280px; /* hanya di HP: samakan dengan lebar kartu agar pas di tengah */
+  }
+
+  .badge {
+    right: -8px; /* -40px membuat badge keluar layar di HP */
+  }
+
+  .subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  /* ---------- About ---------- */
+  .about {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .about img {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+  .description {
+    text-align: justify; /* tetap rata kiri-kanan di HP */
+    text-justify: inter-word;
+  }
+
+  /* ---------- Experience ---------- */
+  .exp-card-v2 {
+    padding: 16px 16px 8px;
+  }
+
+  .exp-role {
+    font-size: 18px;
+  }
+
+  /* WHAT I LEARNED | IMPACT tetap kiri-kanan seperti awal */
+  .exp-grid-2 {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+
+  .exp-grid-2 > * {
+    min-width: 0; /* cegah kolom melebar keluar layar */
+  }
+
+  /* ---------- Efek kursor: matikan di layar kecil ---------- */
+  .cursor-glow,
+  #cursorCanvas {
+    display: none;
+  }
+}
+
+
+/* =====================================================
+   2. MOBILE KECIL (<= 480px)
+===================================================== */
+@media (max-width: 480px) {
+
+  :root {
+    --exp-fs: 2.8vw;
+  }
+
+  section {
+    padding: 32px 16px;
+  }
+
+  .hero {
+    padding: 92px 16px 24px;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  /* Skills: 4 kolom x 5 baris, tepi kiri & kanan sejajar dengan section lain */
+  .skills-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .skill-card {
+    padding: 12px 4px;
+    gap: 10px;
+  }
+
+  .skill-card img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .skill-name {
+    font-size: 10px;
+  }
+
+  /* Experience header: logo di samping peran, baris company & durasi
+     memakai lebar penuh kartu, tiap baris 1 baris seperti di desktop */
+  .exp-header {
+    display: grid;
+    grid-template-columns: 46px minmax(0, 1fr);
+    column-gap: 12px;
+    row-gap: 8px;
+    align-items: center;
+  }
+
+  .exp-title-area {
+    display: contents;
+  }
+
+  .exp-logo {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+  }
+
+  .exp-role {
+    grid-column: 2;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.25;
+  }
+
+  .exp-company-line,
+  .exp-meta {
+    grid-column: 1 / -1;
+    gap: 4px;
+    margin: 0;
+  }
+
+  .exp-company-line {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+
+  .exp-meta {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+
+  .exp-company-line {
+    font-size: var(--exp-fs, 11px);
+  }
+
+  .exp-meta {
+    font-size: var(--exp-fs, 11px);
+  }
+
+  .exp-company-line .flag {
+    font-size: inherit;
+  }
+
+  /* Dua kolom tetap dipakai di HP, jadi teks & jarak dikecilkan supaya muat */
+  .exp-details-inner {
+    padding: 8px 0 12px;
+  }
+
+  .exp-grid-2 {
+    gap: 12px;
+  }
+
+  .exp-block-title {
+    font-size: 10.5px;
+    letter-spacing: 0.04em;
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+
+  .exp-ico {
+    font-size: 15px;
+  }
+
+  .exp-list {
+    gap: 8px;
+  }
+
+  .exp-list li {
+    font-size: 12px;
+    line-height: 1.5;
+    padding-left: 16px;
+    overflow-wrap: break-word;
+  }
+
+  .exp-list li::before {
+    font-size: 12px;
+  }
+
+  /* Projects */
+  .project-filters {
+    gap: 8px;
+    margin-bottom: 28px;
+  }
+
+  .project-filters button {
+    font-size: 13px;
+    padding: 7px 14px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Certificates: 2 kolom biar tidak memanjang ke bawah */
+  .cert-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .cert-card {
+    padding: 12px;
+    border-radius: 16px;
+  }
+
+  .cert-thumb {
+    height: 100px;
+    margin-bottom: 12px;
+  }
+
+  .cert-card h4 {
+    font-size: 13px;
+    min-height: 0;
+  }
+
+  .cert-card p {
+    font-size: 12px;
+    min-height: 0;
+  }
+}
+
+
+/* =====================================================
+   3. PERANGKAT TOUCH (tablet besar / iPad juga)
+===================================================== */
+@media (hover: none) {
+  #cursorCanvas {
+    display: none;
+  }
+}
+
+
+/* =====================================================
+   4. HERO DI PERANGKAT SENTUH: tanpa efek hover 3D
+   (di HP, tap membuat foto miring dan muncul kotak bayangan)
+===================================================== */
+@media (hover: none) {
+  .card-hero:hover .wrapper-hero {
+    transform: none;
+    box-shadow: var(--shadow-soft);
+    border-color: var(--border);
+  }
+
+  .card-hero:hover .character-hero {
+    opacity: 0;
+    transform: translate3d(0, 25px, 0);
+  }
+}
